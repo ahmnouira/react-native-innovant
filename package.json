@@ -10,6 +10,9 @@
     "reactnative",
     "ui"
   ],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest",
@@ -22,11 +25,6 @@
     "clean-install": "rimraf node_modules && yarn",
     "changelog": "auto-changelog -p",
     "prepare": "rimraf dist && tsc"
-  },
-  "author": {
-    "name": "Ahmed Nouira",
-    "email": "ahmnouira@gmail.com",
-    "url": "https://github.com/ahmnouira"
   },
   "bugs": {
     "url": "https://github.com/ahmnouira/react-native-innovant/issues"
@@ -46,6 +44,7 @@
     "@types/react-test-renderer": "^17.0.1",
     "babel-jest": "^27.0.6",
     "eslint": "^7.32.0",
+    "husky": "^7.0.1",
     "jest": "^27.0.6",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
@@ -59,5 +58,29 @@
   },
   "dependencies": {
     "auto-changelog": "^2.3.0"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint --fix",
+      "bash -c tsc",
+      "jest --bail --findRelatedTests"
+    ],
+    "src/**/*.{js,jsx}": [
+      "eslint --fix",
+      "jest --bail --findRelatedTests"
+    ],
+    "./src/**": [
+      "prettier --write ."
+    ]
+  },
+  "author": {
+    "name": "Ahmed Nouira",
+    "email": "ahmnouira@gmail.com",
+    "url": "https://github.com/ahmnouira"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
