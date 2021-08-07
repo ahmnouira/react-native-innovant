@@ -1,6 +1,6 @@
 {
   "name": "react-native-innovant",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React Native Innovant Studio UI Library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -28,7 +28,6 @@
     "email": "ahmnouira@gmail.com",
     "url": "https://github.com/ahmnouira"
   },
-  
   "bugs": {
     "url": "https://github.com/ahmnouira/react-native-innovant/issues"
   },
