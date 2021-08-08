@@ -1,9 +1,9 @@
-import React, { PropsWithChildren } from 'react'
-import { KeyboardAvoidingView } from 'react-native'
-import { hasNotch } from 'react-native-device-info'
-import { isIOS } from '../../helpers/paltfrom'
+import React, { PropsWithChildren } from 'react';
+import { KeyboardAvoidingView } from 'react-native';
+import { hasNotch } from 'react-native-device-info';
+import { isIOS } from '../../helpers/paltfrom';
 
-type KeyboardAvoidingProps = {}
+type KeyboardAvoidingProps = {};
 
 export const KeyboardAvoiding: React.FC<KeyboardAvoidingProps> = ({
   children,
@@ -16,5 +16,5 @@ export const KeyboardAvoiding: React.FC<KeyboardAvoidingProps> = ({
       style={{ flex: 1 }}>
       {children}
     </KeyboardAvoidingView>
-  )
-}
+  );
+};

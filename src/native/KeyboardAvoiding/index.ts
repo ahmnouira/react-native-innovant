@@ -1,1 +1,1 @@
-export * from './KeyboardAvoiding'
+export * from './KeyboardAvoiding';

@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native';
 // import { commonStyles } from '../../../shared/styles'
 
 export const styles = StyleSheet.create({
@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 10,
     padding: 12,
-   // ...commonStyles.shadow5,
+    // ...commonStyles.shadow5,
   },
 
   row: {
@@ -35,8 +35,6 @@ export const styles = StyleSheet.create({
     backgroundColor: '#08080806',
   },
 
-
-
   icon: {
     resizeMode: 'contain',
   },
@@ -44,4 +42,4 @@ export const styles = StyleSheet.create({
   details: {
     flex: 1,
   },
-})
+});

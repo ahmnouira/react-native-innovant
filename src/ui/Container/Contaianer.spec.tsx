@@ -4,9 +4,9 @@ import { Container } from './Container';
 
 describe('Container', () => {
   test('render Container', () => {
-    const {  } = render(<Container />);
+    const {} = render(<Container />);
   });
   test('render secondary contianer', () => {
-    const {  } = render(<Container secondary />);
+    const {} = render(<Container secondary />);
   });
 });

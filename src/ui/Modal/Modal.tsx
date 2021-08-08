@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 import {
   Modal as ModalRN,
   ModalProps as ModalPropsRN,
@@ -7,23 +7,23 @@ import {
   ViewStyle,
   SafeAreaView,
   StyleSheet,
-  Text
-} from 'react-native'
+  Text,
+} from 'react-native';
 
-import  Icon from 'react-native-vector-icons/AntDesign'
-import { windowHeight, windowWidth } from "../../helpers/paltfrom"
-import { useTheme } from '../../hooks'
-import { styles } from './styles'
+import Icon from 'react-native-vector-icons/AntDesign';
+import { windowHeight, windowWidth } from '../../helpers/paltfrom';
+import { useTheme } from '../../hooks/useTheme';
+import { styles } from './styles';
 
 export type ModalProps = ModalPropsRN & {
-  onClose: () => void
-  title?: string
-  center?: boolean
-  height?: 1 | 1.5 | 2 | number
-  width?: 1 | 1.5 | 2 | number
-  containerStyles?: ViewStyle | undefined
-  modalStyles?: ViewStyle | undefined
-}
+  onClose: () => void;
+  title?: string;
+  center?: boolean;
+  height?: 1 | 1.5 | 2 | number;
+  width?: 1 | 1.5 | 2 | number;
+  containerStyles?: ViewStyle | undefined;
+  modalStyles?: ViewStyle | undefined;
+};
 
 export const Modal: React.FC<ModalProps> = ({
   onClose,
@@ -36,10 +36,7 @@ export const Modal: React.FC<ModalProps> = ({
   modalStyles = undefined,
   ...props
 }: React.PropsWithChildren<ModalProps>) => {
-
-  
-  
-  const theme = useTheme()
+  const theme = useTheme();
   const titleStyles = StyleSheet.create({
     title: {
       fontFamily: theme?.fonts.secondary.regular,
@@ -47,7 +44,7 @@ export const Modal: React.FC<ModalProps> = ({
       fontSize: 17,
       textAlign: 'center',
     },
-  }); 
+  });
 
   return (
     <ModalRN animationType='fade' transparent={true} onRequestClose={onClose} {...props}>
@@ -63,20 +60,19 @@ export const Modal: React.FC<ModalProps> = ({
                   ...containerStyles,
                 },
               ]}>
-              
-            <View style={styles.row}>
-              <TouchableOpacity style={[styles.roundView, styles.closeView]} onPress={onClose}>
-                <Icon name='close' color={'black'} size={20} />
-              </TouchableOpacity>
-              <Text style={[titleStyles.title]}>{title}</Text>
-              <View style={styles.roundView} />
-            </View>
-              
+              <View style={styles.row}>
+                <TouchableOpacity style={[styles.roundView, styles.closeView]} onPress={onClose}>
+                  <Icon name='close' color={'black'} size={20} />
+                </TouchableOpacity>
+                <Text style={[titleStyles.title]}>{title}</Text>
+                <View style={styles.roundView} />
+              </View>
+
               <View style={styles.details}>{children}</View>
             </View>
           </View>
         </SafeAreaView>
       </TouchableOpacity>
     </ModalRN>
-  )
-}
+  );
+};

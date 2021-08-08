@@ -4,6 +4,6 @@ import { EmptyHeader } from './EmptyHeader';
 
 describe('EmptyHeader', () => {
   test('render primary EmptyHeader', () => {
-    const {  } = render(<EmptyHeader />);
+    const {} = render(<EmptyHeader />);
   });
 });

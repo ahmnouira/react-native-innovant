@@ -5243,10 +5243,10 @@ react-native-codegen@^0.0.6:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
-react-native-innovant@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/react-native-innovant/-/react-native-innovant-0.0.4.tgz#4e357c9b1bfdb5c7d03b03f87d2af429d4ba762e"
-  integrity sha512-ieNin4sGBfr/QzQ0ujf5hYrTC8U54jDEgW86Gz07Iy+u023WKHkC9BeZQnMgqYPsXkRw6XiA2ALN3wSMr4XMwA==
+react-native-innovant@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/react-native-innovant/-/react-native-innovant-0.0.5.tgz#1c7043a9b8af2c81b1001cdcbd62d9519ef01ff7"
+  integrity sha512-lxg6qtZGGr8BQnYMYS9V9sMoWkft8lAOvjxaV/unhwmdW9SxGXW0e5FivTxPFV9q5DfrvlcYNcrlvwCVCVTdwg==
   dependencies:
     auto-changelog "^2.3.0"
 
