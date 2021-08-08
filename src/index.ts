@@ -1,4 +1,4 @@
-export * from './ui'
-export * from  './theme'
-export * from './hooks'
-export * from './native'
+export * as ui from "./ui"
+export * as native from './native'
+export * as  hooks from './hooks'
+export * as theme from './theme'
