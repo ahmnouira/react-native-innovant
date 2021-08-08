@@ -7,4 +7,4 @@ module.exports = {
     'node_modules/(?!(jest-)?@?react-native|@react-native-community|@react-navigation|react-native-snackbar-component)', // to avoid outside import error
   ],
   clearMocks: true,
-};
+}

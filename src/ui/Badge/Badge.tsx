@@ -9,7 +9,7 @@ type BadgeProps = {
   image?: ImageProps
 }
 
-export function Badge({ text, bgColor, textColor = 'white', image }: BadgeProps) {
+export const Badge: React.FC<BadgeProps> = ({ text, bgColor, textColor = 'white', image }: BadgeProps) => {
   return (
     <TouchableOpacity style={[styles.badge, { backgroundColor: bgColor }]} activeOpacity={0.75}>
       {image ? (

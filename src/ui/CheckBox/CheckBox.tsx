@@ -3,7 +3,7 @@ import { ColorValue, TouchableOpacity } from 'react-native'
 import { styles } from './styles'
 import Icon from 'react-native-vector-icons/AntDesign'
 
-type CheckBoxProps = {
+export type CheckBoxProps = {
   color: ColorValue
   checked?: boolean
 }

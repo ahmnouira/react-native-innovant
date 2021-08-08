@@ -4,7 +4,7 @@ import { Loading } from '../Loading'
 import { TouchableOpacity } from '../TouchableOpacity'
 import { styles } from './styles'
 
-type BtnWhiteProps = TouchableOpacityProps & {
+export type BtnWhiteProps = TouchableOpacityProps & {
   title: string
   isLoading?: boolean
   disabled?: boolean

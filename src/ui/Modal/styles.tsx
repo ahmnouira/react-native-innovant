@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native'
 // import { commonStyles } from '../../../shared/styles'
 
 export const styles = StyleSheet.create({
@@ -42,4 +42,4 @@ export const styles = StyleSheet.create({
   details: {
     flex: 1,
   },
-});
+})

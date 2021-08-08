@@ -6,7 +6,6 @@ export const Empty = ({ message, subMessage = 'Try Exploring or Creatting', sear
   return (
     <View style={styles.container}>
       <View style={[styles.view, searching ? { marginBottom: 8 } : {}]}>
-      
         <View style={{ marginVertical: 15 }}>
           <Text style={styles.text}>{message}</Text>
           {searching ? null : <Text style={styles.text}>or Workshops</Text>}

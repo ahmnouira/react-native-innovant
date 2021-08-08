@@ -5,9 +5,7 @@ import { theme } from '../../theme/theme'
 
 describe('Badge ', () => {
   it('render Badge ', () => {
-    const { container } = render(
-      <Badge text='Muisic' textColor={theme.colors.black} bgColor={theme.colors.white} />
-    )
+    const { container } = render(<Badge text='Muisic' textColor={theme.colors.black} bgColor={theme.colors.white} />)
 
     expect(container).toBeDefined()
   })
@@ -15,6 +13,5 @@ describe('Badge ', () => {
   it('render Badge without image and textColor', () => {
     const { container } = render(<Badge text='Muisic' bgColor={theme.colors.white} />)
     expect(container).toBeDefined()
-
   })
 })

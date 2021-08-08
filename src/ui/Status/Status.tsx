@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { StatusBar, StatusBarProps } from 'react-native';
-import { isIOS } from '../../helpers/paltfrom';
-import { useTheme } from '../../hooks/useTheme';
+import * as React from 'react'
+import { StatusBar, StatusBarProps } from 'react-native'
+import { isIOS } from '../../helpers/paltfrom'
+import { useTheme } from '../../hooks/useTheme'
 
 export const Status: React.FC<StatusBarProps> = (props: StatusBarProps) => {
-  const theme = useTheme();
+  const theme = useTheme()
   return (
     <StatusBar
       hidden={false}
@@ -15,5 +15,5 @@ export const Status: React.FC<StatusBarProps> = (props: StatusBarProps) => {
       animated={isIOS}
       {...props}
     />
-  );
-};
+  )
+}

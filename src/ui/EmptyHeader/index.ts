@@ -1,1 +1,1 @@
-export * from './EmptyHeader';
+export * from './EmptyHeader'

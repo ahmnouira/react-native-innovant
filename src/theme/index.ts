@@ -1,8 +1,3 @@
-export type {
-    ThemeType
-} from './theme'
+export type { ThemeType } from './theme'
 
-export {
-    theme
-} from './theme'
-
+export { theme } from './theme'

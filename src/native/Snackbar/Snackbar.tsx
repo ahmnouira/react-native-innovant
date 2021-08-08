@@ -1,7 +1,7 @@
-import * as React from 'react';
-import RNSnackbar, { SnackbarComponentProps } from 'react-native-snackbar-component';
+import * as React from 'react'
+import RNSnackbar, { SnackbarComponentProps } from 'react-native-snackbar-component'
 
-type SnackbarProps = SnackbarComponentProps & {};
+type SnackbarProps = SnackbarComponentProps & {}
 
 export const Snackbar: React.FC<SnackbarProps> = ({ visible, textMessage }: SnackbarProps) => {
   return (
@@ -13,5 +13,5 @@ export const Snackbar: React.FC<SnackbarProps> = ({ visible, textMessage }: Snac
 
       //Text on SnackBar
     />
-  );
-};
+  )
+}

@@ -16,7 +16,7 @@ export const SwitchField: React.FC<SwitchFieldProps> = ({ label, ...props }: Swi
       justifyContent: 'space-between',
       alignItems: 'center',
     },
-  
+
     label: {
       color: theme?.colors.black,
       lineHeight: 20,
@@ -26,7 +26,7 @@ export const SwitchField: React.FC<SwitchFieldProps> = ({ label, ...props }: Swi
       fontSize: 15,
     },
   })
-  
+
   return (
     <View style={styles.container}>
       <Text style={styles.label}>{label}</Text>

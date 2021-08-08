@@ -6,11 +6,10 @@ describe('RadioBox', () => {
   it('render checked RadioBox', () => {
     const { container } = render(<RadioBox checked color='red' />)
     expect(container).toBeDefined()
-
   })
 
   it('render unchecked RadioBox', () => {
-    const { container} = render(<RadioBox color='blue' />)
+    const { container } = render(<RadioBox color='blue' />)
     expect(container).toBeDefined()
   })
 })

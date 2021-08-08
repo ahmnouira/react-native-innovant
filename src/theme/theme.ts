@@ -1,33 +1,33 @@
 export type ThemeType = {
   fonts: {
     primary: {
-      regular: string;
-      bold: string;
-    };
+      regular: string
+      bold: string
+    }
 
     secondary: {
-      regular: string;
-      bold: string;
-      medium: string;
-    };
-  };
+      regular: string
+      bold: string
+      medium: string
+    }
+  }
   colors: {
-    primary: string;
-    light: string;
-    secondary: string;
-    tertiary: string;
-    black: string;
-    white: string;
-  };
+    primary: string
+    light: string
+    secondary: string
+    tertiary: string
+    black: string
+    white: string
+  }
   sizes: {
-    xm: number;
-    sm: number;
-    md: number;
-    lg: number;
-    xl: number;
-    xxl: number;
-  };
-};
+    xm: number
+    sm: number
+    md: number
+    lg: number
+    xl: number
+    xxl: number
+  }
+}
 
 export const theme: ThemeType = {
   fonts: {
@@ -57,4 +57,4 @@ export const theme: ThemeType = {
     xl: 20,
     xxl: 24,
   },
-};
+}
