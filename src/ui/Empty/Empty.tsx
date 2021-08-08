@@ -2,7 +2,7 @@ import * as React from 'react'
 import { View, Text } from 'react-native'
 import { styles } from './styles'
 
-export const Empty = ({ message, subMessage = 'Try Exploring or Creatting', searching = false }) => {
+export const Empty: React.FC<any> = ({ message, subMessage = 'Try Exploring or Creatting', searching = false }) => {
   return (
     <View style={styles.container}>
       <View style={[styles.view, searching ? { marginBottom: 8 } : {}]}>

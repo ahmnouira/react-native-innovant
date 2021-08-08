@@ -1566,15 +1566,7 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
   integrity sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==
 
-"@types/react-native-vector-icons@^6.4.8":
-  version "6.4.8"
-  resolved "https://registry.yarnpkg.com/@types/react-native-vector-icons/-/react-native-vector-icons-6.4.8.tgz#7dd9740f36a71e98c484b9ea12155940c85cedc2"
-  integrity sha512-ImqhwVPHtcWrfwaS4vVrnN/C1mY50+Gjer4wMltUJlkt9pTJ5WXCyn8VFPmxC5h8Zy0DBN2tYdusBZ2xJP14OA==
-  dependencies:
-    "@types/react" "*"
-    "@types/react-native" "*"
-
-"@types/react-native@*", "@types/react-native@^0.64.5":
+"@types/react-native@^0.64.5":
   version "0.64.12"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.64.12.tgz#1c6a3226c26d7a5949cdf8878e6cfe95fe0951d6"
   integrity sha512-sw6WGSaL219zqrgdb4kQUtFB9iGXC/LmecLZ+UUWEgwYvD0YH81FqWYmONa2HuTkOFAsxu2bK4DspkWRUHIABQ==
@@ -5587,15 +5579,27 @@ react-native-device-info@^8.1.7:
   resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-8.1.7.tgz#ebd45e7ada405d9b7ee6f3b248816e3620765569"
   integrity sha512-aRudnmQmuyFHRDrLMRJQyCCZsibKutuUnJhZZUDEEU5Deiyy2c+0ajAE26knqKr6bOaMRVTyPMjvt7YntcM81g==
 
-react-native-innovant@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/react-native-innovant/-/react-native-innovant-0.0.9.tgz#42b2a2f0729aa371e8a62fcb567b38a6f5eb0e0a"
-  integrity sha512-osJ5wYvvhoGez2WqlphEo8XoZ21fGHSMCkYfqXK6/Jo08CilBuawR82bC8Pi462L7KRGUqfnpT5jvYlUSNnxHA==
+react-native-fast-image@^8.3.7:
+  version "8.3.7"
+  resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-8.3.7.tgz#c4877de17903101f6d94b6736a4f7e5d7b019224"
+  integrity sha512-J++Ad04PTUe4YgjyGv63gfgV8Fz1gZKAgQHpblf8Z87D9dxfc8UfXHTPv9VLGdTJU4IzdTnQqzoFgDtWdsvBsQ==
+
+react-native-innovant@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-innovant/-/react-native-innovant-0.1.0.tgz#fe26165102beaeb2113398e4a24f2164f32e1c69"
+  integrity sha512-uhy10D/zaTPr4iIGyRUSL8+7Qc9FHhlIdZ0qq4EErDhsO649sRJkqlNmB9YfD1fhn/qn1CTmbdGPYQCMXsVF7Q==
   dependencies:
-    "@types/react-native-vector-icons" "^6.4.8"
     react-native-device-info "^8.1.7"
+    react-native-fast-image "^8.3.7"
+    react-native-raw-bottom-sheet "^2.2.0"
     react-native-simple-toast "1.1.3"
     react-native-snackbar-component "1.1.11"
+    react-native-vector-icons "^8.1.0"
+
+react-native-raw-bottom-sheet@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-raw-bottom-sheet/-/react-native-raw-bottom-sheet-2.2.0.tgz#d11dabb86aadb014273767ef7b554924b13633c5"
+  integrity sha512-qL4JKIqvbcVxbkKzeh51hjV7suoJN3ouxzvLmOg0FBUV1yiJAfEbacjQdtRCI6+OU5pyGFBIifLsTXcFDwHggg==
 
 react-native-simple-toast@1.1.3:
   version "1.1.3"
