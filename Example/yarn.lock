@@ -5684,10 +5684,10 @@ react-native-fast-image@^8.3.7:
   resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-8.3.7.tgz#c4877de17903101f6d94b6736a4f7e5d7b019224"
   integrity sha512-J++Ad04PTUe4YgjyGv63gfgV8Fz1gZKAgQHpblf8Z87D9dxfc8UfXHTPv9VLGdTJU4IzdTnQqzoFgDtWdsvBsQ==
 
-react-native-innovant@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/react-native-innovant/-/react-native-innovant-0.1.1.tgz#3c82c951019598ab4f51cc9e50cd1e8706f90f5f"
-  integrity sha512-wf9JCa4yZdkz14OLvD+wHSLs9c7TvBr4BWhY0v+XzMzViD7VflrfFAm/TwqKWm/eXPW7bC3pzAaB86dzWPhFmA==
+react-native-innovant@0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-innovant/-/react-native-innovant-0.1.2.tgz#2b60f22262fdbab4f05b97e72f73b652e1bf0611"
+  integrity sha512-ZDrzKl+DL5UQrhopBU9Mai5pHKlG7S/ScLNWyRLNNcOM/7sXFh3v5tbWL/lW9h/8G/8HzQyaU1e02jFf75oCKQ==
   dependencies:
     react-native-device-info "^8.1.7"
     react-native-fast-image "^8.3.7"
