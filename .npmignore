@@ -1,3 +1,5 @@
 node_modules
 Example
 .github
+*.spec.ts
+*.spec.tsx

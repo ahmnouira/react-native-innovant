@@ -1,27 +1,27 @@
 import { StyleSheet } from 'react-native'
-import { theme } from '..'
+import { theme } from '../theme/theme'
 import { windowWidth } from '../helpers/paltfrom'
 
 // Styles
 export const commonStyles = StyleSheet.create({
   searchInput: {
     height: 46,
-    backgroundColor: theme.colors.tertiary,
+    backgroundColor: theme?.colors.tertiary,
     borderRadius: 48,
     paddingLeft: 40,
     paddingRight: 35,
     paddingTop: 5,
     paddingBottom: 5,
-    fontSize: theme.sizes.lg,
-    fontFamily: theme.fonts.secondary.regular,
+    fontSize: theme?.sizes.lg,
+    fontFamily: theme?.fonts.secondary.regular,
   },
 
   headerTitleStyle: {
-    fontFamily: theme.fonts.secondary.regular,
+    fontFamily: theme?.fonts.secondary.regular,
     fontSize: 17,
     lineHeight: 21,
 
-    color: theme.colors.white,
+    color: theme?.colors.white,
     letterSpacing: -0.34,
   },
 
@@ -37,24 +37,24 @@ export const commonStyles = StyleSheet.create({
   },
   /*** TAB  ***/
   tabBarUnderline: {
-    backgroundColor: theme.colors.primary,
+    backgroundColor: theme?.colors.primary,
     borderTopRightRadius: 18,
     borderTopLeftRadius: 18,
   },
 
   tabStyle: {
-    backgroundColor: theme.colors.white,
+    backgroundColor: theme?.colors.white,
   },
 
   tabTextStyle: {
-    fontFamily: theme.fonts.secondary.medium,
-    fontSize: windowWidth < 768 ? 13 : theme.sizes.lg,
+    fontFamily: theme?.fonts.secondary.medium,
+    fontSize: windowWidth < 768 ? 13 : theme?.sizes.lg,
     color: '#000',
     lineHeight: 22,
   },
 
   tabActiveStyle: {
-    backgroundColor: theme.colors.white,
+    backgroundColor: theme?.colors.white,
   },
 
   /*** End TAB ***/
@@ -63,7 +63,7 @@ export const commonStyles = StyleSheet.create({
     textAlign: 'center',
     color: '#FFF',
     fontSize: 10,
-    fontFamily: theme.fonts.primary.regular,
+    fontFamily: theme?.fonts.primary.regular,
     letterSpacing: -0.18,
   },
 
@@ -87,20 +87,20 @@ export const commonStyles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 50,
-    backgroundColor: theme.colors.primary,
+    backgroundColor: theme?.colors.primary,
     justifyContent: 'center',
     alignItems: 'center',
   },
 
   sheetOkLabel: {
     color: '#FFF',
-    fontFamily: theme.fonts.secondary.medium,
+    fontFamily: theme?.fonts.secondary.medium,
     fontSize: 10,
     lineHeight: 11,
   },
   sheetTitle: {
     fontSize: 17,
-    fontFamily: theme.fonts.secondary.medium,
+    fontFamily: theme?.fonts.secondary.medium,
     lineHeight: 19,
     letterSpacing: 0.32,
   },
@@ -127,8 +127,8 @@ export const commonStyles = StyleSheet.create({
   },
 
   link: {
-    fontFamily: theme.fonts.secondary.medium,
-    fontSize: theme.sizes.sm,
+    fontFamily: theme?.fonts.secondary.medium,
+    fontSize: theme?.sizes.sm,
     color: '#ED1E4675',
     lineHeight: 18,
     letterSpacing: -0.07,
@@ -137,7 +137,7 @@ export const commonStyles = StyleSheet.create({
   error: {
     color: 'rgba(237, 30, 70, .75)',
     fontSize: 10,
-    fontFamily: theme.fonts.primary.bold,
+    fontFamily: theme?.fonts.primary.bold,
     marginVertical: 2,
     lineHeight: 18,
     letterSpacing: -0.07,
@@ -159,8 +159,8 @@ export const commonStyles = StyleSheet.create({
   // inputs
   input: {
     flex: 1,
-    paddingVertical: theme.sizes.sm,
-    paddingLeft: theme.sizes.lg,
+    paddingVertical: theme?.sizes.sm,
+    paddingLeft: theme?.sizes.lg,
 
     color: 'rgba(255, 255, 255, 1)',
   },
@@ -175,9 +175,9 @@ export const commonStyles = StyleSheet.create({
   },
 
   text: {
-    color: theme.colors.black,
+    color: theme?.colors.black,
     lineHeight: 22,
-    fontFamily: theme.fonts.secondary.regular,
+    fontFamily: theme?.fonts.secondary.regular,
     fontSize: 12,
     textAlign: 'left',
     textTransform: 'capitalize',
@@ -201,7 +201,7 @@ export const commonStyles = StyleSheet.create({
   /** shadows **/
   shadow0: {
     elevation: 0, // android shaows
-    shadowColor: theme.colors.primary,
+    shadowColor: theme?.colors.primary,
     shadowOpacity: undefined,
     shadowRadius: undefined,
     shadowOffset: {

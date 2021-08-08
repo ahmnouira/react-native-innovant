@@ -4,7 +4,7 @@ import { theme } from '../../theme'
 export const styles = StyleSheet.create({
   title: {
     color: '#646464',
-    fontFamily: theme.fonts.secondary.regular,
+    fontFamily: theme?.fonts.secondary.regular,
     textTransform: 'uppercase',
     fontSize: 12,
   },
@@ -21,8 +21,8 @@ export const styles = StyleSheet.create({
 
   text: {
     marginLeft: 8,
-    color: theme.colors.black,
-    fontFamily: theme.fonts.secondary.regular,
+    color: theme?.colors.black,
+    fontFamily: theme?.fonts.secondary.regular,
     fontSize: 13,
   },
 
@@ -33,6 +33,6 @@ export const styles = StyleSheet.create({
   },
 
   bold: {
-    fontFamily: theme.fonts.secondary.bold,
+    fontFamily: theme?.fonts.secondary.bold,
   },
 })

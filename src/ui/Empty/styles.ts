@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { theme } from '../..'
+import { theme } from '../../theme/theme'
 import { isTall } from '../../helpers/paltfrom'
 
 export const styles = StyleSheet.create({
@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
 
   text: {
     textAlign: 'center',
-    fontFamily: theme.fonts.secondary.regular,
+    fontFamily: theme?.fonts.secondary.regular,
     fontSize: 17,
     lineHeight: 19,
     letterSpacing: 0.32,

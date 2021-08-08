@@ -21,9 +21,9 @@ export const styles = StyleSheet.create({
 
   text: {
     textAlign: 'center',
-    fontFamily: theme.fonts.secondary.medium,
+    fontFamily: theme?.fonts.secondary.medium,
 
     fontSize: 17,
-    color: theme.colors.primary,
+    color: theme?.colors.primary,
   },
 })

@@ -13,13 +13,13 @@ export const styles = StyleSheet.create({
   },
   pillText: {
     textAlign: 'center',
-    fontFamily: theme.fonts.secondary.regular,
+    fontFamily: theme?.fonts.secondary.regular,
     fontSize: 17,
     lineHeight: 22,
     letterSpacing: -0.041,
   },
 
   checked: {
-    backgroundColor: theme.colors.white,
+    backgroundColor: theme?.colors.white,
   },
 })

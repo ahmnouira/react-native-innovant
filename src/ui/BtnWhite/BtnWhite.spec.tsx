@@ -9,7 +9,7 @@ describe('BtnWhite', () => {
   })
 
   it('should render  BtnWhite with loading', () => {
-    const { container } = render(<BtnWhite title='next' disabled onPress={() => {}} isLoading />)
+    const { container } = render(<BtnWhite title='next' disabled={false} onPress={() => {}} isLoading />)
     expect(container).toBeDefined()
   })
 })

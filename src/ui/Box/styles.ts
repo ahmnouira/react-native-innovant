@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { theme } from '../..'
+import { theme } from '../../theme/theme'
 import { windowWidth } from '../../helpers/paltfrom'
 
 export const styles = StyleSheet.create({
@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
   },
 
   text: {
-    fontFamily: theme.fonts.secondary.regular,
+    fontFamily: theme?.fonts.secondary.regular,
     fontSize: 17,
     textTransform: 'capitalize',
     textAlign: 'center',

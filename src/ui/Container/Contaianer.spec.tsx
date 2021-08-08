@@ -1,12 +1,23 @@
 import * as React from 'react'
 import { render } from '@testing-library/react-native'
 import { Container } from './Container'
+import { ThemeProvider } from '../../theme/theme.context'
+import { theme } from '../../theme'
 
 describe('Container', () => {
-  test('render Container', () => {
+  it('render Container', () => {
     const {} = render(<Container />)
   })
-  test('render secondary contianer', () => {
+  it('render secondary contianer', () => {
     const {} = render(<Container secondary />)
+  })
+
+  it("should render correctly with theme provider", () => {
+    const {container} = render(
+      <ThemeProvider theme={theme}>
+        <Container />
+      </ThemeProvider>
+    )
+    expect(container).toBeDefined()
   })
 })

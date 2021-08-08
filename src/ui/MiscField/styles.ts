@@ -4,15 +4,15 @@ import { theme } from '../../theme'
 
 export const styles = StyleSheet.create({
   label: {
-    color: theme.colors.black,
+    color: theme?.colors.black,
     lineHeight: 20,
     textAlign: 'left',
     letterSpacing: -0.24,
-    fontFamily: theme.fonts.secondary.medium,
+    fontFamily: theme?.fonts.secondary.medium,
     fontSize: 15,
   },
   colored: {
-    color: theme.colors.primary,
+    color: theme?.colors.primary,
   },
 
   row: {

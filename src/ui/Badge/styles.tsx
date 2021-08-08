@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
   text: {
     lineHeight: 22,
     fontSize: 17,
-    fontFamily: theme.fonts.secondary.regular,
+    fontFamily: theme?.fonts.secondary.regular,
     letterSpacing: -0.41,
     textTransform: 'capitalize',
   },

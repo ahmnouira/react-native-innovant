@@ -11,7 +11,7 @@ export const SwitchField: React.FC<SwitchFieldProps> = ({ label, ...props }: Swi
 
   const styles = StyleSheet.create({
     container: {
-      marginBottom: theme.sizes.sm,
+      marginBottom: theme?.sizes.sm,
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems: 'center',

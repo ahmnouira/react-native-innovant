@@ -7,4 +7,9 @@ describe('Empty', () => {
     const { container } = render(<Empty message='No data to show' />)
     expect(container).toBeDefined()
   })
+
+  it('should render correctly with search prop', () => {
+    const { container } = render(<Empty message='No data to show' searching  />)
+    expect(container).toBeDefined()
+  })
 })

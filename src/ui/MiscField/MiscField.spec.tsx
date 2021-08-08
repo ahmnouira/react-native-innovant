@@ -7,4 +7,9 @@ describe('MiscField', () => {
     const { container } = render(<MiscField label='allow notifications' />)
     expect(container).toBeDefined()
   })
+
+  it('should render correctly with value and primary', () => {
+    const { container } = render(<MiscField label='allow notifications' value={"enabled"} primary />)
+    expect(container).toBeDefined()
+  })
 })

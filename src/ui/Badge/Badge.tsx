@@ -2,7 +2,7 @@ import * as React from 'react'
 import { styles } from './styles'
 import { TouchableOpacity, Text, Image, ColorValue, View, ImageProps } from 'react-native'
 
-type BadgeProps = {
+export type BadgeProps = {
   text: string
   bgColor: ColorValue
   textColor?: ColorValue
