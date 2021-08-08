@@ -1,6 +1,6 @@
 {
   "name": "react-native-innovant",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "React Native Innovant Studio UI Library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -42,19 +42,19 @@
     "@types/jest": "26.0.24",
     "@types/react": "17.0.16",
     "@types/react-native": "0.64.12",
+    "@types/react-native-snackbar-component": "^1.1.1",
+    "@types/react-native-vector-icons": "^6.4.8",
     "@types/react-test-renderer": "17.0.1",
     "auto-changelog": "^2.3.0",
     "babel-jest": "27.0.6",
     "eslint": "7.32.0",
+    "faker": "^5.5.3",
     "husky": "^7.0.1",
     "jest": "27.0.6",
     "metro-react-native-babel-preset": "^0.66.2",
     "prettier": "2.3.2",
     "react": "^17.0.2",
     "react-native": "^0.64.2",
-    "react-native-device-info": "^8.1.7",
-    "react-native-simple-toast": "1.1.3",
-    "react-native-snackbar-component": "1.1.11",
     "react-native-vector-icons": "^8.1.0",
     "react-test-renderer": "^17.0.2",
     "rimraf": "3.0.2",
@@ -62,7 +62,12 @@
     "typescript": "4.3.5"
   },
   "dependencies": {
-    "@types/react-native-vector-icons": "^6.4.8"
+    "react-native-device-info": "^8.1.7",
+    "react-native-fast-image": "^8.3.7",
+    "react-native-raw-bottom-sheet": "^2.2.0",
+    "react-native-simple-toast": "1.1.3",
+    "react-native-snackbar-component": "1.1.11",
+    "react-native-vector-icons": "^8.1.0"
   },
   "peerDependencies": {
     "react-native-vector-icons": ">7.0.0"
@@ -90,5 +95,9 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "resolutions": {
+    "@types/react": "17.0.16",
+    "@jest/create-cache-key-function": "^27"
   }
 }
