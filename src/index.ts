@@ -1,5 +1,3 @@
-export { useTheme } from './hooks/useTheme'
-export { useUtils } from './hooks/useUtils'
 
 import { KeyboardAvoiding } from './components/KeyboardAvoiding'
 import { Snackbar } from './components/Snackbar'
@@ -9,7 +7,7 @@ import { Badge } from './components/Badge'
 import { Bold } from './components/Bold'
 import { Box } from './components/Box'
 import { BoxList } from './components/BoxList'
-import { BtnWhite, BtnWhiteProps } from './components/Button'
+import { Button, ButtonProps } from './components/Button'
 import { CheckBox } from './components/CheckBox'
 import { Container } from './components/Container'
 import { Empty } from './components/Empty'
@@ -24,12 +22,11 @@ import { MiscField } from './components/MiscField'
 import { Modal, ModalProps } from './components/Modal'
 import { Options } from './components/Options'
 import { Pill } from './components/Pill'
-import { PillList } from './components/PillList'
-import { RadioBox } from './components/RadioBox'
-import { Sheet } from './components/Sheet'
-
+import { PillList } from "./components/PillList"
 import { SheetHeader } from './components/SheetHeader'
 import { Status } from './components/Status'
+import {Sheet} from './components/Sheet'
+import {RadioBox} from './components/RadioBox'
 
 import { SwitchField } from './components/SwitchField'
 
@@ -37,15 +34,18 @@ import { TouchableOpacity } from './components/TouchableOpacity'
 
 import { ThemeType, theme } from './shared/theme'
 import { ThemeContext, ThemeContextProps, ThemeProvideProps, ThemeProvider } from './context/theme.context'
+import {ContextWrapper} from './context/contextWrapper'
 
-export { KeyboardAvoiding, Snackbar, Toast }
+export { useTheme } from './hooks/useTheme'
+export { useUtils } from './hooks/useUtils'
+
 
 export {
   Badge,
   Box,
   BoxList,
   Bold,
-  BtnWhite,
+  Button,
   CheckBox,
   Container,
   EmptyHeader,
@@ -62,15 +62,18 @@ export {
   PillList,
   RadioBox,
   Sheet,
+  Snackbar,
+  Toast, 
+  KeyboardAvoiding,
   SheetHeader,
   SwitchField,
   TouchableOpacity,
 }
 
-export type { BtnWhiteProps }
+export type { ButtonProps }
 
 export type { ModalProps }
 
-export { ThemeContext, ThemeProvider, theme }
+export { ThemeContext, ThemeProvider, theme, ContextWrapper }
 
 export type { ThemeType, ThemeContextProps, ThemeProvideProps }
