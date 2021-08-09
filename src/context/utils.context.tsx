@@ -11,7 +11,6 @@ type UtilsContextProps = {
   dispatch: React.Dispatch<UtilsAction>
 }
 
-type ProviderProps = {}
 
 export const UtilsContext: React.Context<UtilsContextProps> = React.createContext<UtilsContextProps>(
   {} as UtilsContextProps

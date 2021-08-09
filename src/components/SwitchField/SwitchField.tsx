@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Switch, View, Text, SwitchProps, StyleSheet } from 'react-native'
-import { useTheme } from '../..'
+import { useTheme } from '../../hooks/useTheme'
 
 type SwitchFieldProps = SwitchProps & {
   label: string

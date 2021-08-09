@@ -2,7 +2,7 @@ import * as React from 'react'
 import { render } from '@testing-library/react-native'
 import { Container } from './Container'
 import { ThemeProvider } from '../../context/theme.context'
-import { theme } from '../../theme'
+import { theme } from '../../shared/theme'
 
 describe('Container', () => {
   it('render Container', () => {

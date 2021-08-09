@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 import { isIOS } from '../../helpers/paltfrom'
-import { theme } from '../../theme'
+import { theme } from '../../shared/theme'
 
 export const styles = StyleSheet.create({
   label: {

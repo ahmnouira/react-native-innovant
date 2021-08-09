@@ -1,4 +1,4 @@
-import { ImageModalType, SnackbarType, ToastType } from '../../../models/types'
+import { ImageModalType, SnackbarType, ToastType } from  "../../../types"
 import { UtilsAction } from '../../actions/utils.action'
 
 export type UitlsState = {
