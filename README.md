@@ -67,4 +67,6 @@ export const App = () => {
 - [x] [CheckBox](#)
 - [x] [Contianer](#)
 - [x] [Empty](#)
-- [x] [Image] (#)
+- [x] [Image](#)
+
+
