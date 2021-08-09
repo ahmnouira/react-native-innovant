@@ -11,7 +11,6 @@ type UtilsContextProps = {
   dispatch: React.Dispatch<UtilsAction>
 }
 
-
 export const UtilsContext: React.Context<UtilsContextProps> = React.createContext<UtilsContextProps>(
   {} as UtilsContextProps
 )

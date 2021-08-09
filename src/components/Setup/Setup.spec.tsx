@@ -5,7 +5,7 @@ import { UtilsProvider } from '../../context/utils.context'
 
 describe('Setup', () => {
   test('render Setup with init store', () => {
-    const { container} = render(
+    const { container } = render(
       <UtilsProvider>
         <Setup />
       </UtilsProvider>

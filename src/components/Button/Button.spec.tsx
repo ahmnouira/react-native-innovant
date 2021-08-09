@@ -4,7 +4,7 @@ import { Button } from './Button'
 
 describe('Button', () => {
   it('should render BtnWhite', () => {
-    const { container } = render(<Button title='next' disabled onPress={() => {}} />)
+    const { container } = render(<Button title='next' onPress={() => {}} />)
     expect(container).toBeDefined()
   })
 
