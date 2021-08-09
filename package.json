@@ -39,7 +39,6 @@
   "homepage": "https://github.com/ahmnouira/react-native-innovant/",
   "license": "MIT",
   "devDependencies": {
-    "@jest/create-cache-key-function": "^27.0.6",
     "@testing-library/react-native": "7.2.0",
     "@types/faker": "^5.5.7",
     "@types/jest": "26.0.24",
@@ -49,12 +48,12 @@
     "@types/react-native-vector-icons": "^6.4.8",
     "@types/react-test-renderer": "17.0.1",
     "auto-changelog": "^2.3.0",
-    "babel-jest": "27.0.6",
+    "babel-jest": "26",
     "codecov": "^3.8.3",
     "eslint": "7.32.0",
     "faker": "^5.5.3",
     "husky": "^7.0.1",
-    "jest": "27.0.6",
+    "jest": "26",
     "metro-react-native-babel-preset": "^0.66.2",
     "prettier": "2.3.2",
     "react": "^17.0.2",
@@ -101,7 +100,6 @@
     }
   },
   "resolutions": {
-    "@types/react": "17.0.16",
-    "@jest/create-cache-key-function": "^27"
+    "@types/react": "17.0.16"
   }
 }
