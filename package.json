@@ -19,7 +19,7 @@
     "test": "jest",
     "test:update": "jest -u",
     "format:fix": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
-    "test:ci": "jest --runInBand",
+    "test:ci": "jest --runInBand --detectOpenHandles",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
@@ -39,6 +39,7 @@
   "homepage": "https://github.com/ahmnouira/react-native-innovant/",
   "license": "MIT",
   "devDependencies": {
+    "@jest/create-cache-key-function": "^27.0.6",
     "@testing-library/react-native": "7.2.0",
     "@types/faker": "^5.5.7",
     "@types/jest": "26.0.24",
