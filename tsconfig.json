@@ -8,7 +8,7 @@
     "jsx": "react-native" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */,
     "checkJs": true,
     "declarationMap": true,
-
+    "sourceMap": true,
     "declaration": true /* Generates corresponding '.d.ts' file. */,
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
     // "rootDir": "./",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */

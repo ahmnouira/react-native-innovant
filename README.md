@@ -22,6 +22,12 @@
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
 </p>
 
+
+<p align="center">
+  <a href="https://david-dm.org/ahmnouira/react-native-innovant"><img src="https://david-dm.org/ahmnouira/react-native-innovant/status.svg"></a>
+  <a href="https://david-dm.org/ahmnouira/react-native-innovant?type=dev"><img src="https://david-dm.org/ahmnouira/react-native-innovant/dev-status.svg"></a>
+</p>
+
 <br />
 
 ## Get Started
