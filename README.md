@@ -29,12 +29,12 @@
 Installation with npm
 
 ```sh
-npm install react-native-innova
+npm install react-native-innovant
 ```
 
 Installation with yarn
 ```sh
-yarn add  react-native-innovant
+yarn add react-native-innovant
 ```
 
 ### Usage
