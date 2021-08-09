@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import SimpleToast from 'react-native-simple-toast'
 //Imperative hack#
 //The ToastAndroid API is imperative, but there is a way to expose a declarative component from it

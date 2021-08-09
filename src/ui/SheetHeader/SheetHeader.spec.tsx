@@ -4,7 +4,7 @@ import { SheetHeader } from './SheetHeader'
 
 describe('SheetHeader', () => {
   it('should render SheetHeader', () => {
-    const { container } = render(<SheetHeader title='sheet title' onConfirm={() => {}} onClose={() => {}}  okDisabled/>)
+    const { container } = render(<SheetHeader title='sheet title' onConfirm={() => {}} onClose={() => {}} okDisabled />)
     expect(container).toBeDefined()
   })
 

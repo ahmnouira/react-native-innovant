@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { theme } from '../../theme/theme'
+import { theme } from '../../shared/theme'
 import { windowWidth } from '../../helpers/paltfrom'
 
 export const styles = StyleSheet.create({

@@ -1,16 +1,23 @@
 import * as React from 'react'
 import { render } from '@testing-library/react-native'
 import { Badge } from './Badge'
-import { theme } from '../../theme/theme'
+import { theme } from '../../shared/theme'
 import faker from 'faker'
 
 describe('Badge ', () => {
   it('should render Badge correctly', () => {
-    const { container } = render(<Badge image={{
-      source: {
-        uri: faker.internet.avatar()
-      }
-    }} text='Muisic' textColor={theme?.colors.black} bgColor={theme?.colors.white} />)
+    const { container } = render(
+      <Badge
+        image={{
+          source: {
+            uri: faker.internet.avatar(),
+          },
+        }}
+        text='Muisic'
+        textColor={theme?.colors.black}
+        bgColor={theme?.colors.white}
+      />
+    )
     expect(container).toBeDefined()
   })
 

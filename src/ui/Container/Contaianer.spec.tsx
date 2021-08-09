@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { render } from '@testing-library/react-native'
 import { Container } from './Container'
-import { ThemeProvider } from '../../theme/theme.context'
+import { ThemeProvider } from '../../context/theme.context'
 import { theme } from '../../theme'
 
 describe('Container', () => {
@@ -12,8 +12,8 @@ describe('Container', () => {
     const {} = render(<Container secondary />)
   })
 
-  it("should render correctly with theme provider", () => {
-    const {container} = render(
+  it('should render correctly with theme provider', () => {
+    const { container } = render(
       <ThemeProvider theme={theme}>
         <Container />
       </ThemeProvider>
