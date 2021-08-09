@@ -13,6 +13,7 @@
   "files": [
     "dist"
   ],
+  "icon": "images/innovant.jpeg",
   "scripts": {
     "build": "tsc",
     "test": "jest",

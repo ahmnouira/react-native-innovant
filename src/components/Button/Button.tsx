@@ -4,20 +4,20 @@ import { Loading } from '../Loading'
 import { TouchableOpacity } from '../TouchableOpacity'
 import { styles } from './styles'
 
-export type BtnWhiteProps = TouchableOpacityProps & {
+export type ButtonProps = TouchableOpacityProps & {
   title: string
   isLoading?: boolean
   disabled?: boolean
   icon?: string
 }
 
-export const BtnWhite: React.FC<BtnWhiteProps> = ({
+export const Button: React.FC<ButtonProps> = ({
   title,
   isLoading = false,
   disabled = false,
   icon,
   ...props
-}: BtnWhiteProps) => {
+}: ButtonProps) => {
   return (
     <TouchableOpacity
       disabled={disabled}

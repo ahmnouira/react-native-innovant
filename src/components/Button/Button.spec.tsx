@@ -1,15 +1,15 @@
 import * as React from 'react'
 import { render } from '@testing-library/react-native'
-import { BtnWhite } from './BtnWhite'
+import { Button } from './Button'
 
-describe('BtnWhite', () => {
+describe('Button', () => {
   it('should render BtnWhite', () => {
-    const { container } = render(<BtnWhite title='next' disabled onPress={() => {}} />)
+    const { container } = render(<Button title='next' disabled onPress={() => {}} />)
     expect(container).toBeDefined()
   })
 
   it('should render  BtnWhite with loading', () => {
-    const { container } = render(<BtnWhite title='next' disabled={false} onPress={() => {}} isLoading />)
+    const { container } = render(<Button title='next' disabled={false} onPress={() => {}} isLoading />)
     expect(container).toBeDefined()
   })
 })
