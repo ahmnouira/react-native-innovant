@@ -9,7 +9,7 @@ export type BoxListProps<T = any> = Omit<FlatListProps<T>, 'data' | 'renderItem'
 }
 
 export const BoxList: React.FC<BoxListProps> = ({ items, selectedItems, handleChange, ...props }: BoxListProps) => {
-  const renderItems = ({ item: { title, icon }, index }) => {
+  const renderItems = ({ item: { title, icon } }) => {
     return (
       <Box isChecked={selectedItems.includes(title)} handlePress={() => handleChange(title)} title={title} pic={icon} />
     )

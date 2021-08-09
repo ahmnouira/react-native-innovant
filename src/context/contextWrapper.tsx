@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Setup } from '../components/Setup'
-import { theme } from '../shared/theme'
 import { UtilsProvider } from './utils.context'
 
 export const ContextWrapper = ({ children }: React.PropsWithChildren<{}>) => {

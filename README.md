@@ -1,3 +1,4 @@
+<br/>
 <p align="center">
   <a href="https://www.innovant.studio/">
     <img alt="react-native-innovant" src="./images/innovant.jpeg" width="200">
@@ -25,45 +26,45 @@
 
 ## Get Started
 
-#### Installation with npm
+Installation with npm
 
 ```sh
-npm install react-native-innovant
+npm install react-native-innova
 ```
 
-#### Installation with yarn
+Installation with yarn
 ```sh
 yarn add  react-native-innovant
 ```
 
 ### Usage
 
-```tsx
+```jsx
 import {Container, Button, ThemeProvider, ContextWrapper} from 'react-native-innovant'
 
 export const App = () => {
     return (
         <ThemeProvider>
-            <ContextWrapper>
-                <Container>
-                    <Button title="Submit">
-            </Container>
-        </ContextWrapper>
+         <ContextWrapper>
+          <Container>
+           <Button title="Submit">
+           </Container>
+          </ContextWrapper>
         </ThemeProvider>
     )
 }
 
 ```
 
-#### Components included:
+### Components
 
-- [x] [Avatar]
-- [x] [Badge]
-- [x] [Bold]
-- [x] [Box]
-- [x] [BoxList]
-- [x] [Button]
-- [x] [CheckBox]
-- [x] [Contianer]
-- [x] [Empty]
-- [x] [Image] 
+- [x] [Avatar](#)
+- [x] [Badge](#)
+- [x] [Bold](#)
+- [x] [Box](#)
+- [x] [BoxList](#)
+- [x] [Button](#)
+- [x] [CheckBox](#)
+- [x] [Contianer](#)
+- [x] [Empty](#)
+- [x] [Image] (#)
