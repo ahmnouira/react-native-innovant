@@ -4,7 +4,7 @@ import { Text } from 'react-native'
 import { useTheme } from '../../hooks/useTheme'
 
 type BoldProps = TextProps & {
-  variant: 'primary' | 'secondary'
+  variant?: 'primary' | 'secondary'
 }
 
 export const Bold: React.FC<BoldProps> = ({ variant, children, ...props }: React.PropsWithChildren<BoldProps>) => {

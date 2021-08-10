@@ -1,13 +1,13 @@
-import React from 'react'
+import * as React from 'react'
 import { render } from '@testing-library/react-native'
 import { Bold } from './Bold'
 
 describe('Bold', () => {
-  test('render primary Bold', () => {
-    render(<Bold variant='primary' />)
+  it('should render Bold', () => {
+    render(<Bold />)
   })
 
-  test('render secondary Bold', () => {
-    render(<Bold variant='secondary' />)
+  it('render secondary Bold', () => {
+    render(<Bold variant="secondary" />)
   })
 })
