@@ -3,7 +3,7 @@ import { Snackbar } from './components/Snackbar'
 import { Toast } from './components/Toast'
 
 import { Badge } from './components/Badge'
-import { Bold } from './components/Bold'
+import { Text } from './components/Text'
 import { Box } from './components/Box'
 import { BoxList } from './components/BoxList'
 import { Button, ButtonProps } from './components/Button'
@@ -42,7 +42,7 @@ export {
   Badge,
   Box,
   BoxList,
-  Bold,
+  Text,
   Button,
   CheckBox,
   Container,

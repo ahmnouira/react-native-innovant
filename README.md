@@ -66,7 +66,6 @@ export const App = () => {
 
 - [x] [Avatar](#)
 - [x] [Badge](#)
-- [x] [Bold](#)
 - [x] [Box](#)
 - [x] [BoxList](#)
 - [x] [Button](#)
@@ -74,5 +73,7 @@ export const App = () => {
 - [x] [Contianer](#)
 - [x] [Empty](#)
 - [x] [Image](#)
+- [x] [Text](#)
+
 
 
