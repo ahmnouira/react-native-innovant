@@ -42,7 +42,7 @@
     "@testing-library/react-native": "7.2.0",
     "@types/faker": "5.5.8",
     "@types/jest": "27.0.1",
-    "@types/react": "17.0.21",
+    "@types/react": "17.0.22",
     "@types/react-native": "0.64.15",
     "@types/react-native-snackbar-component": "1.1.1",
     "@types/react-native-vector-icons": "6.4.8",
@@ -100,6 +100,6 @@
     }
   },
   "resolutions": {
-    "@types/react": "17.0.21"
+    "@types/react": "17.0.22"
   }
 }
