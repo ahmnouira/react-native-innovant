@@ -13,9 +13,7 @@
   <a href="https://www.npmjs.com/package/react-native-innovant"><img src="https://img.shields.io/npm/v/react-native-innovant.svg?style=for-the-badge"></a>
   <a href="https://travis-ci.com/ahmnouira/react-native-innovant"><img src="https://api.travis-ci.com/ahmnouira/react-native-innovant.svg?branch=master"></a>
   <a href="https://github.com/ahmnouira/react-native-innovant"><img src="https://img.shields.io/github/stars/ahmnouira/react-native-innovant?style=for-the-badge"></a>
-  <a href="https://www.npmjs.com/package/react-native-innovant"><img src="https://img.shields.io/npm/dw/react-native-innovant.svg?style=for-the-badge"></a>
-  <a href="https://www.npmjs.com/package/react-native-innovant"><img src="https://img.shields.io/npm/dm/react-native-innovant.svg?style=for-the-badge"></a>
-  <a href="https://www.npmjs.com/package/react-native-innovant"><img src="https://img.shields.io/npm/dt/react-native-innovant.svg?style=for-the-badge"></a>
+
 </p>
 
 <p align="center">
@@ -24,10 +22,10 @@
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
 </p>
 
-
 <p align="center">
-  <a href="https://david-dm.org/ahmnouira/react-native-innovant"><img src="https://david-dm.org/ahmnouira/react-native-innovant/status.svg"></a>
-  <a href="https://david-dm.org/ahmnouira/react-native-innovant?type=dev"><img src="https://david-dm.org/ahmnouira/react-native-innovant/dev-status.svg"></a>
+   <a href="https://www.npmjs.com/package/react-native-innovant"><img src="https://img.shields.io/npm/dw/react-native-innovant.svg?style=for-the-badge"></a>
+  <a href="https://www.npmjs.com/package/react-native-innovant"><img src="https://img.shields.io/npm/dm/react-native-innovant.svg?style=for-the-badge"></a>
+  <a href="https://www.npmjs.com/package/react-native-innovant"><img src="https://img.shields.io/npm/dt/react-native-innovant.svg?style=for-the-badge"></a>
 </p>
 
 <br />
