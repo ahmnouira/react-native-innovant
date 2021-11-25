@@ -1,8 +1,6 @@
-<br/>
-
-<h4 align="center">
-    <a href="https://reactnative.dev">React Native</a> Innovant UI Library
-</h4>
+<h1 align="center">
+  <a href="https://reactnative.dev">React Native</a> Innovant UI Library</h1>
+</h1>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/react-native-innovant"><img src="https://img.shields.io/npm/v/react-native-innovant.svg"></a>
