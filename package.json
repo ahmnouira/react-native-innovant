@@ -18,7 +18,7 @@
     "build": "tsc",
     "test": "jest",
     "test:update": "jest -u",
-    "format:fix": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
+    "format:fix": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,yml}\"",
     "test:ci": "jest --runInBand --detectOpenHandles",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",

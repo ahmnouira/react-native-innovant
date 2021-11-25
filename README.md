@@ -32,6 +32,7 @@ npm install react-native-innovant
 ```
 
 Installation with yarn
+
 ```sh
 yarn add react-native-innovant
 ```
@@ -67,6 +68,3 @@ export const App = () => {
 - [x] [Empty](#)
 - [x] [Image](#)
 - [x] [Text](#)
-
-
-
