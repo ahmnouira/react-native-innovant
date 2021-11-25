@@ -1,6 +1,6 @@
 {
   "name": "react-native-innovant",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "React Native Innovant UI Library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
