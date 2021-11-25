@@ -1,13 +1,8 @@
 <br/>
-<p align="center">
-  <a href="https://www.innovant.studio/">
-    <img alt="react-native-innovant" src="./images/innovant.jpeg" width="200">
-  </a>
-</p>
 
-<p align="center">
-    <a href="https://reactnative.dev">React Native</a> Innovant Studio UI Library
-</p>
+<h4 align="center">
+    <a href="https://reactnative.dev">React Native</a> Innovant UI Library
+</h4>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/react-native-innovant"><img src="https://img.shields.io/npm/v/react-native-innovant.svg"></a>
