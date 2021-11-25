@@ -1,7 +1,7 @@
 {
   "name": "react-native-innovant",
-  "version": "0.2.3",
-  "description": "React Native Innovant Studio UI Library",
+  "version": "0.3.0",
+  "description": "React Native Innovant UI Library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [
@@ -13,7 +13,6 @@
   "files": [
     "dist"
   ],
-  "icon": "images/innovant.jpeg",
   "scripts": {
     "build": "tsc",
     "test": "jest",
