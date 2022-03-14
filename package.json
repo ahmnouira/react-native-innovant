@@ -42,7 +42,7 @@
     "@types/faker": "6.6.8",
     "@types/jest": "27.0.3",
     "@types/react": "17.0.37",
-    "@types/react-native": "0.66.6",
+    "@types/react-native": "0.67.3",
     "@types/react-native-snackbar-component": "1.1.1",
     "@types/react-native-vector-icons": "6.4.10",
     "@types/react-test-renderer": "17.0.1",
