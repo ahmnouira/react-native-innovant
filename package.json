@@ -38,7 +38,7 @@
   "homepage": "https://github.com/ahmnouira/react-native-innovant/",
   "license": "MIT",
   "devDependencies": {
-    "@testing-library/react-native": "9.0.0",
+    "@testing-library/react-native": "9.1.0",
     "@types/faker": "6.6.8",
     "@types/jest": "27.0.3",
     "@types/react": "17.0.37",
