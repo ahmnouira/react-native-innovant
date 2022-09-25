@@ -57,7 +57,7 @@
     "prettier": "2.6.1",
     "react": "17.0.2",
     "react-native": "0.67.4",
-    "react-native-vector-icons": "8.1.0",
+    "react-native-vector-icons": "9.2.0",
     "react-test-renderer": "17.0.2",
     "rimraf": "3.0.2",
     "ts-node": "10.7.0",
