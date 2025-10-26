@@ -2,16 +2,14 @@ import * as React from 'react'
 import { render } from '@testing-library/react-native'
 import { Badge } from './Badge'
 import { theme } from '../../shared/theme'
-import faker from 'faker'
+import { faker } from '@faker-js/faker'
 
 describe('Badge ', () => {
   it('should render Badge correctly', () => {
     const { container } = render(
       <Badge
         image={{
-          source: {
-            uri: faker.internet.avatar(),
-          },
+          uri: faker.image.avatar(),
         }}
         text='Muisic'
         textColor={theme?.colors.black}

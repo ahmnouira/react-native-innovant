@@ -1,15 +1,15 @@
 import * as React from 'react'
 import { styles } from './styles'
-import { TouchableOpacity, Text, Image, ColorValue, View, ImageProps } from 'react-native'
+import { TouchableOpacity, Text, Image, ColorValue, View, ImageSourcePropType } from 'react-native'
 
 export type BadgeProps = {
   text: string
   bgColor: ColorValue
   textColor?: ColorValue
-  image?: ImageProps
+  image?: ImageSourcePropType
 }
 
-export const Badge: React.FC<BadgeProps> = ({ text, bgColor, textColor = 'white', image }: BadgeProps) => {
+export const Badge: React.FC<BadgeProps> = ({ image, text, bgColor, textColor = 'white' }: BadgeProps) => {
   return (
     <TouchableOpacity style={[styles.badge, { backgroundColor: bgColor }]} activeOpacity={0.75}>
       {image ? (

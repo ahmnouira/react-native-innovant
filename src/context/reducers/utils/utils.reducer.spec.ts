@@ -1,6 +1,6 @@
 import { UtilsAction } from '../../actions/utils.action'
 import { utilsReducer, initialUtilsState, UitlsState } from './utils.reducer'
-import faker from 'faker'
+
 
 describe('utils reducer', () => {
   it('should return the initialState', () => {
@@ -44,7 +44,7 @@ describe('utils reducer', () => {
     const action: UtilsAction = {
       type: 'SHOW_IMAGE_MODAL',
       payload: {
-        image: faker.internet.avatar(),
+        image: '',
         visible: true,
       },
     }
