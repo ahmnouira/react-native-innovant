@@ -699,7 +699,20 @@
     "@babel/parser" "^7.27.2"
     "@babel/types" "^7.27.1"
 
-"@babel/traverse--for-generate-function-map@npm:@babel/traverse@^7.25.3", "@babel/traverse@^7.14.0", "@babel/traverse@^7.25.3", "@babel/traverse@^7.27.1", "@babel/traverse@^7.28.0", "@babel/traverse@^7.28.3", "@babel/traverse@^7.28.4", "@babel/traverse@^7.7.2":
+"@babel/traverse--for-generate-function-map@npm:@babel/traverse@^7.25.3":
+  version "7.28.4"
+  resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.28.4.tgz#8d456101b96ab175d487249f60680221692b958b"
+  integrity sha512-YEzuboP2qvQavAcjgQNVgsvHIDv6ZpwXvcvjmyySP2DIMuByS/6ioU5G9pYrWHM6T2YDfc7xga9iNzYOs12CFQ==
+  dependencies:
+    "@babel/code-frame" "^7.27.1"
+    "@babel/generator" "^7.28.3"
+    "@babel/helper-globals" "^7.28.0"
+    "@babel/parser" "^7.28.4"
+    "@babel/template" "^7.27.2"
+    "@babel/types" "^7.28.4"
+    debug "^4.3.1"
+
+"@babel/traverse@^7.14.0", "@babel/traverse@^7.25.3", "@babel/traverse@^7.27.1", "@babel/traverse@^7.28.0", "@babel/traverse@^7.28.3", "@babel/traverse@^7.28.4", "@babel/traverse@^7.7.2":
   version "7.28.4"
   resolved "https://registry.yarnpkg.com/@babel/traverse/-/traverse-7.28.4.tgz#8d456101b96ab175d487249f60680221692b958b"
   integrity sha512-YEzuboP2qvQavAcjgQNVgsvHIDv6ZpwXvcvjmyySP2DIMuByS/6ioU5G9pYrWHM6T2YDfc7xga9iNzYOs12CFQ==
@@ -1504,13 +1517,13 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.15.tgz#e6e5a86d602beaca71ce5163fadf5f95d70931c7"
   integrity sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw==
 
-"@types/react-native-snackbar-component@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@types/react-native-snackbar-component/-/react-native-snackbar-component-1.1.1.tgz#f21792e56a529779fc66f70b2a07e29fec965d8b"
-  integrity sha512-AfbHe2mQPuaSnT+4tQowVr3E3xFCA0kdKHqeyJVtxrVGKTGdpZoE+J5E4jUkBAsL0snbRmKrxvtIL4lKV7nPDg==
+"@types/react-native-snackbar-component@1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@types/react-native-snackbar-component/-/react-native-snackbar-component-1.1.9.tgz#ccf1192f4d868dddc5439b4203d41e684eda7979"
+  integrity sha512-HLGzunE13v1wPFJuArzYX4q1hbJrhdACCE3LQWl69MKxY2mvK2gKeI3CG9D7ktZQ9FWCoiGl/g30YqmjDKHSdA==
   dependencies:
     "@types/react" "*"
-    "@types/react-native" "*"
+    react-native "*"
 
 "@types/react-native-vector-icons@6.4.10":
   version "6.4.10"
