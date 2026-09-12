@@ -4928,7 +4928,7 @@ react-native-simple-toast@^3.3.2:
   resolved "https://registry.npmjs.org/react-native-simple-toast/-/react-native-simple-toast-3.3.2.tgz"
   integrity sha512-jtZa5VXLDc3Rr+1a2eYyviakxOXP8U9AFYp1VWlslApi0wkiNeyAQ4yLZbIY8nayrbHTUSkERiDzKoCsy9v7Dw==
 
-react-native-vector-icons@>=10.0.0:
+react-native-vector-icons@^10.3.0:
   version "10.3.0"
   resolved "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-10.3.0.tgz"
   integrity sha512-IFQ0RE57819hOUdFvgK4FowM5aMXg7C7XKsuGLevqXkkIJatc3QopN0wYrb2IrzUgmdpfP+QVIbI3S6h7M0btw==
@@ -4936,7 +4936,7 @@ react-native-vector-icons@>=10.0.0:
     prop-types "^15.7.2"
     yargs "^16.1.1"
 
-react-native@*, react-native@>=0.71.0, react-native@>=0.78, react-native@0.87.1:
+react-native@*, react-native@^0.87.1, react-native@>=0.71.0, react-native@>=0.78, react-native@0.87.1:
   version "0.87.1"
   resolved "https://registry.npmjs.org/react-native/-/react-native-0.87.1.tgz"
   integrity sha512-DJKG6ANoD7BtrE4z9DewiSD7/RxCX73lK5Pu49aUr85P3333Dm2roTiP0rRjQNDZdVizHSOmstWfwF/o9EjCRA==
@@ -4992,10 +4992,10 @@ react-test-renderer@19.2.3:
     react-is "^19.2.3"
     scheduler "^0.27.0"
 
-react@*, react@^19.0.0, react@^19.2.0, react@^19.2.3, react@>=19.0.0, react@19.2.3:
-  version "19.2.3"
-  resolved "https://registry.npmjs.org/react/-/react-19.2.3.tgz"
-  integrity sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==
+react@*, react@^19.0.0, react@^19.2.0, react@^19.2.3, react@^19.3.0, react@>=19.0.0:
+  version "19.3.0"
+  resolved "https://registry.npmjs.org/react/-/react-19.3.0.tgz"
+  integrity sha512-E8LUcbtBWt20bbl2YoHfx4ZDBdxVTfOKtCZn9cDSJ4l6/nuoApcpIBcj47t2wZoVX8g2ZHuMHbiShgCR1T5Sog==
 
 redent@^3.0.0:
   version "3.0.0"

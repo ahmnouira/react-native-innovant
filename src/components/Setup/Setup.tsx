@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Toast } from '../Toast'
 import { Status } from '../Status'
 import { useUtils } from '../../hooks/useUtils'
 
@@ -32,7 +31,6 @@ export const Setup = (_props: any) => {
   return (
     <React.Fragment>
       <Status />
-      <Toast visible={toast?.visible} message={toast?.message ? toast.message : ''} position={toast?.postion} />
     </React.Fragment>
   )
 }
