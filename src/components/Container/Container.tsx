@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from 'react'
-import { SafeAreaView, ViewProps } from 'react-native'
+import { View, ViewProps } from 'react-native'
 import { StyleSheet } from 'react-native'
 import { useTheme } from '../../hooks/useTheme'
 
@@ -25,8 +25,8 @@ export const Container: React.FC<ContainerProps> = ({
   })
 
   return (
-    <SafeAreaView style={[styles.container, secondary ? styles.secondary : null]} {...rest}>
+    <View style={[styles.container, secondary ? styles.secondary : null]} {...rest}>
       {children}
-    </SafeAreaView>
+    </View>
   )
 }

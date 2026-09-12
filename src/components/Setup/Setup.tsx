@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Toast } from '../Toast'
-import { Snackbar } from '../Snackbar'
 import { Status } from '../Status'
 import { useUtils } from '../../hooks/useUtils'
 
@@ -33,7 +32,6 @@ export const Setup = (_props: any) => {
   return (
     <React.Fragment>
       <Status />
-      <Snackbar {...snackbar} />
       <Toast visible={toast?.visible} message={toast?.message ? toast.message : ''} position={toast?.postion} />
     </React.Fragment>
   )

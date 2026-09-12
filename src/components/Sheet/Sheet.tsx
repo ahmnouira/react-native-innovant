@@ -1,6 +1,6 @@
 import React, { PropsWithChildren, forwardRef, ReactNode } from 'react'
 import RBSheet from 'react-native-raw-bottom-sheet'
-import { View, ScrollView, SafeAreaView } from 'react-native'
+import { View, ScrollView } from 'react-native'
 import { styles } from './styles'
 import { SheetHeader } from '../SheetHeader/SheetHeader'
 import { windowHeight } from '../../helpers/paltfrom'
@@ -26,18 +26,16 @@ export const Sheet = forwardRef(
 
         draggableIcon: styles.sheetDraggableIcon,
       }}>
-      <SafeAreaView>
-        <View style={styles.container}>
-          <SheetHeader okDisabled={temp ? true : false} {...rest} />
+      <View style={styles.container}>
+        <SheetHeader okDisabled={temp ? true : false} {...rest} />
 
-          <ScrollView
-            style={[styles.scroll, { marginBottom: 60 }]}
-            showsVerticalScrollIndicator={false}
-            keyboardShouldPersistTaps='handled'>
-            <View style={styles.main}>{children}</View>
-          </ScrollView>
-        </View>
-      </SafeAreaView>
+        <ScrollView
+          style={[styles.scroll, { marginBottom: 60 }]}
+          showsVerticalScrollIndicator={false}
+          keyboardShouldPersistTaps='handled'>
+          <View style={styles.main}>{children}</View>
+        </ScrollView>
+      </View>
     </RBSheet>
   )
 )

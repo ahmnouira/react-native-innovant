@@ -8,3 +8,14 @@ import mockRNDeviceInfo from 'react-native-device-info/jest/react-native-device-
 jest.mock('react-native-device-info', () => mockRNDeviceInfo)
 
 jest.mock('react-native/Libraries/EventEmitter/NativeEventEmitter')
+
+jest.mock('react-native/Libraries/Components/Keyboard/Keyboard', () => {
+  return {
+    addListener: jest.fn(() => ({
+      remove: jest.fn(),
+    })),
+    removeListener: jest.fn(),
+    dismiss: jest.fn(),
+    isVisible: jest.fn(() => false),
+  }
+})
