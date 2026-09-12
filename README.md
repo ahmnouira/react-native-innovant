@@ -115,7 +115,7 @@ import { Badge } from 'react-native-innovant'
 ```jsx
 import { Box } from 'react-native-innovant'
 
-;<Box title='Guitar' pic={require('./guitar.png')} isChecked handlePress={() => {}} />
+<Box title='Guitar' pic={require('./guitar.png')} isChecked handlePress={() => {}} />
 ```
 
 ### BoxList
@@ -145,7 +145,7 @@ import { Button } from 'react-native-innovant'
 ```jsx
 import { CheckBox } from 'react-native-innovant'
 
-;<CheckBox color='#ED1E46' checked />
+<CheckBox color='#ED1E46' checked />
 ```
 
 ### Container
@@ -153,7 +153,7 @@ import { CheckBox } from 'react-native-innovant'
 ```jsx
 import { Container } from 'react-native-innovant'
 
-;<Container secondary>{/* content */}</Container>
+<Container secondary>{/* content */}</Container>
 ```
 
 ### Empty
@@ -161,7 +161,7 @@ import { Container } from 'react-native-innovant'
 ```jsx
 import { Empty } from 'react-native-innovant'
 
-;<Empty message='No results' subMessage='Try another search' searching />
+<Empty message='No results' subMessage='Try another search' searching />
 ```
 
 ### EmptyHeader
@@ -169,7 +169,7 @@ import { Empty } from 'react-native-innovant'
 ```jsx
 import { EmptyHeader } from 'react-native-innovant'
 
-;<EmptyHeader />
+<EmptyHeader />
 ```
 
 ### ErrorState
@@ -177,7 +177,7 @@ import { EmptyHeader } from 'react-native-innovant'
 ```jsx
 import { ErrorState } from 'react-native-innovant'
 
-;<ErrorState error='Network request failed' />
+<ErrorState error='Network request failed' />
 ```
 
 ### IconButton
@@ -185,7 +185,7 @@ import { ErrorState } from 'react-native-innovant'
 ```jsx
 import { IconButton } from 'react-native-innovant'
 
-;<IconButton icon='heart' color='#ED1E46' size={24} onPress={() => {}} />
+<IconButton icon='heart' color='#ED1E46' size={24} onPress={() => {}} />
 ```
 
 ### Image
@@ -193,7 +193,7 @@ import { IconButton } from 'react-native-innovant'
 ```jsx
 import { Image } from 'react-native-innovant'
 
-;<Image source={{ uri: 'https://example.com/logo.png' }} style={{ width: 100, height: 100 }} />
+<Image source={{ uri: 'https://example.com/logo.png' }} style={{ width: 100, height: 100 }} />
 ```
 
 ### KeyboardAvoiding
@@ -201,7 +201,7 @@ import { Image } from 'react-native-innovant'
 ```jsx
 import { KeyboardAvoiding } from 'react-native-innovant'
 
-;<KeyboardAvoiding>{/* form content */}</KeyboardAvoiding>
+<KeyboardAvoiding>{/* form content */}</KeyboardAvoiding>
 ```
 
 ### Loading
@@ -209,7 +209,7 @@ import { KeyboardAvoiding } from 'react-native-innovant'
 ```jsx
 import { Loading } from 'react-native-innovant'
 
-;<Loading size='large' center />
+<Loading size='large' center />
 ```
 
 ### MiscField
@@ -237,7 +237,7 @@ const [visible, setVisible] = useState(false)
 ```jsx
 import { Options } from 'react-native-innovant'
 
-;<Options
+<Options
   options={[
     { title: 'Edit Profile', icon: 'edit', onPress: () => {} },
     { title: 'Report', icon: 'exclamationcircleo', onPress: () => {} },
@@ -247,10 +247,10 @@ import { Options } from 'react-native-innovant'
 
 ### Pill
 
-```jsx
+```tsx
 import { Pill } from 'react-native-innovant'
 
-;<Pill title='Hip-Hop' isChecked handlePress={() => {}} />
+<Pill title='Hip-Hop' isChecked handlePress={() => {}} />
 ```
 
 ### PillList
@@ -268,7 +268,7 @@ const genres = ['Hip-Hop', 'R&B', 'Pop', 'Electro']
 ```jsx
 import { RadioBox } from 'react-native-innovant'
 
-;<RadioBox color='#ED1E46' checked />
+<RadioBox color='#ED1E46' checked />
 ```
 
 ### Sheet
@@ -288,7 +288,7 @@ const ref = useRef<any>(null)
 ```jsx
 import { SheetHeader } from 'react-native-innovant'
 
-;<SheetHeader title='Confirm' onClose={() => {}} onConfirm={() => {}} />
+<SheetHeader title='Confirm' onClose={() => {}} onConfirm={() => {}} />
 ```
 
 ### Snackbar
@@ -296,7 +296,7 @@ import { SheetHeader } from 'react-native-innovant'
 ```jsx
 import { Snackbar } from 'react-native-innovant'
 
-;<Snackbar visible textMessage='You are offline' />
+<Snackbar visible textMessage='You are offline' />
 ```
 
 ### Setup
@@ -305,7 +305,7 @@ import { Snackbar } from 'react-native-innovant'
 import { ContextWrapper, Setup } from 'react-native-innovant'
 
 // Usually rendered once inside ContextWrapper:
-;<ContextWrapper>
+<ContextWrapper>
   <Setup />
   {/* your app */}
 </ContextWrapper>
@@ -316,7 +316,7 @@ import { ContextWrapper, Setup } from 'react-native-innovant'
 ```jsx
 import { Status } from 'react-native-innovant'
 
-;<Status barStyle='light-content' />
+<Status barStyle='light-content' />
 ```
 
 ### SwitchField
@@ -324,7 +324,7 @@ import { Status } from 'react-native-innovant'
 ```jsx
 import { SwitchField } from 'react-native-innovant'
 
-;<SwitchField label='Notifications' value={on} onValueChange={setOn} />
+<SwitchField label='Notifications' value={on} onValueChange={setOn} />
 ```
 
 ### Text
@@ -341,7 +341,7 @@ import { Text } from 'react-native-innovant'
 ```jsx
 import { Toast } from 'react-native-innovant'
 
-;<Toast visible message='Saved!' position='bottom' />
+<Toast visible message='Saved!' position='bottom' />
 ```
 
 > Use the [`useUtils`](#useutils) hook to trigger toasts imperatively instead.
@@ -351,7 +351,7 @@ import { Toast } from 'react-native-innovant'
 ```jsx
 import { TouchableOpacity } from 'react-native-innovant'
 
-;<TouchableOpacity onPress={() => {}}>{/* content */}</TouchableOpacity>
+<TouchableOpacity onPress={() => {}}>{/* content */}</TouchableOpacity>
 ```
 
 ## Hooks & Context
@@ -393,7 +393,7 @@ const MyComponent = () => {
 ```jsx
 import { ThemeProvider } from 'react-native-innovant'
 
-;<ThemeProvider>{/* app */}</ThemeProvider>
+<ThemeProvider>{/* app */}</ThemeProvider>
 ```
 
 ### ContextWrapper
@@ -403,7 +403,7 @@ Providers application-level UI state (`toast`, `snackbar`, `imageModal`) and ren
 ```jsx
 import { ContextWrapper } from 'react-native-innovant'
 
-;<ContextWrapper>{/* app */}</ContextWrapper>
+<ContextWrapper>{/* app */}</ContextWrapper>
 ```
 
 ## Theme
