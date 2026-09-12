@@ -1,15 +1,5 @@
 {
   "extends": "@react-native/typescript-config",
-  "compilerOptions": {
-    "strict": false,
-    "strictNullChecks": false,
-    "noImplicitAny": false,
-    "skipLibCheck": true,
-    "noEmit": true,
-    "paths": {
-      "react-native-innovant": ["../src/index.ts"]
-    }
-  },
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "../node_modules"]
+  "exclude": ["**/node_modules", "**/Pods"]
 }
