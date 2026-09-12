@@ -5,7 +5,6 @@ import {
   View,
   TouchableOpacity,
   ViewStyle,
-  SafeAreaView,
   StyleSheet,
   Text,
 } from 'react-native'
@@ -49,29 +48,27 @@ export const Modal: React.FC<ModalProps> = ({
   return (
     <ModalRN animationType='fade' transparent={true} onRequestClose={onClose} {...props}>
       <TouchableOpacity activeOpacity={1} onPressIn={onClose} style={{ flex: 1 }}>
-        <SafeAreaView>
-          <View style={[styles.container, center && styles.center, { ...modalStyles }]}>
-            <View
-              style={[
-                styles.modalView,
-                {
-                  height: height <= 2 ? windowHeight / height : height,
-                  width: width <= 2 ? windowWidth / width : width,
-                  ...containerStyles,
-                },
-              ]}>
-              <View style={styles.row}>
-                <TouchableOpacity style={[styles.roundView, styles.closeView]} onPress={onClose}>
-                  <Icon name='close' color={'black'} size={20} />
-                </TouchableOpacity>
-                <Text style={[titleStyles.title]}>{title}</Text>
-                <View style={styles.roundView} />
-              </View>
-
-              <View style={styles.details}>{children}</View>
+        <View style={[styles.container, center && styles.center, { ...modalStyles }]}>
+          <View
+            style={[
+              styles.modalView,
+              {
+                height: height <= 2 ? windowHeight / height : height,
+                width: width <= 2 ? windowWidth / width : width,
+                ...containerStyles,
+              },
+            ]}>
+            <View style={styles.row}>
+              <TouchableOpacity style={[styles.roundView, styles.closeView]} onPress={onClose}>
+                <Icon name='close' color={'black'} size={20} />
+              </TouchableOpacity>
+              <Text style={[titleStyles.title]}>{title}</Text>
+              <View style={styles.roundView} />
             </View>
+
+            <View style={styles.details}>{children}</View>
           </View>
-        </SafeAreaView>
+        </View>
       </TouchableOpacity>
     </ModalRN>
   )

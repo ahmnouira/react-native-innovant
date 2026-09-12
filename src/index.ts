@@ -1,7 +1,5 @@
 import { KeyboardAvoiding } from './components/KeyboardAvoiding'
-import { Snackbar } from './components/Snackbar'
 import { Toast } from './components/Toast'
-
 import { Badge } from './components/Badge'
 import { Text } from './components/Text'
 import { Box } from './components/Box'
@@ -10,7 +8,6 @@ import { Button, ButtonProps } from './components/Button'
 import { CheckBox } from './components/CheckBox'
 import { Container } from './components/Container'
 import { Empty } from './components/Empty'
-
 import { EmptyHeader } from './components/EmptyHeader'
 import { ErrorState } from './components/ErrorState'
 import { Image } from './components/Image'
@@ -26,11 +23,8 @@ import { SheetHeader } from './components/SheetHeader'
 import { Status } from './components/Status'
 import { Sheet } from './components/Sheet'
 import { RadioBox } from './components/RadioBox'
-
 import { SwitchField } from './components/SwitchField'
-
 import { TouchableOpacity } from './components/TouchableOpacity'
-
 import { ThemeType, theme } from './shared/theme'
 import { ThemeContext, ThemeContextProps, ThemeProvideProps, ThemeProvider } from './context/theme.context'
 import { ContextWrapper } from './context/contextWrapper'
@@ -60,7 +54,6 @@ export {
   PillList,
   RadioBox,
   Sheet,
-  Snackbar,
   Toast,
   KeyboardAvoiding,
   SheetHeader,
@@ -69,9 +62,6 @@ export {
 }
 
 export type { ButtonProps }
-
 export type { ModalProps }
-
 export { ThemeContext, ThemeProvider, theme, ContextWrapper }
-
 export type { ThemeType, ThemeContextProps, ThemeProvideProps }

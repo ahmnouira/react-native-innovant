@@ -65,7 +65,7 @@ export const App = () => {
 }
 ```
 
-> The root component also renders `<Status />`, `<Snackbar />` and `<Toast />` for you via
+> The root component also renders `<Status />` and `<Toast />` for you via
 > [`ContextWrapper`](#context-wrapper). Access them imperatively with [`useUtils`](#useutils).
 
 ## Components
@@ -93,8 +93,7 @@ export const App = () => {
 | [RadioBox](#radiobox)                 | Radio indicator.                                       |
 | [Sheet](#sheet)                       | Bottom sheet built on `react-native-raw-bottom-sheet`. |
 | [SheetHeader](#sheetheader)           | Sheet title bar with close/confirm.                    |
-| [Snackbar](#snackbar)                 | Snackbar wrapper.                                      |
-| [Setup](#setup)                       | Mounts `<Status />`, `<Toast />` and `<Snackbar />`.   |
+| [Setup](#setup)                       | Mounts `<Status />`, `<Toast />`.                      |
 | [Status](#status)                     | Status bar wrapper.                                    |
 | [SwitchField](#switchfield)           | Themed `Switch` with label.                            |
 | [Text](#text)                         | Themed text with font weights & sizes.                 |
@@ -291,14 +290,6 @@ import { SheetHeader } from 'react-native-innovant'
 <SheetHeader title='Confirm' onClose={() => {}} onConfirm={() => {}} />
 ```
 
-### Snackbar
-
-```jsx
-import { Snackbar } from 'react-native-innovant'
-
-<Snackbar visible textMessage='You are offline' />
-```
-
 ### Setup
 
 ```jsx
@@ -371,7 +362,7 @@ const MyComponent = () => {
 
 ### useUtils
 
-Returns global UI state (`toast`, `snackbar`, `imageModal`) and a `dispatch` function:
+Returns global UI state (`toast`, `imageModal`) and a `dispatch` function:
 
 ```jsx
 import { useUtils } from 'react-native-innovant'
@@ -398,7 +389,7 @@ import { ThemeProvider } from 'react-native-innovant'
 
 ### ContextWrapper
 
-Providers application-level UI state (`toast`, `snackbar`, `imageModal`) and renders `Setup` for you:
+Providers application-level UI state (`toast`, `imageModal`) and renders `Setup` for you:
 
 ```jsx
 import { ContextWrapper } from 'react-native-innovant'

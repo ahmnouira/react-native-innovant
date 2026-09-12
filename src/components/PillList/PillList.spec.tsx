@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { fireEvent, render } from '@testing-library/react-native'
 import { PillList } from './PillList'
 import { DANCES } from '../../utils/consts'
@@ -12,7 +11,7 @@ describe('PillList', () => {
     }
     selected2RandomDances = [...new Set(selected2RandomDances)]
     const { getByTestId } = await render(
-      <PillList items={DANCES} selectedItems={selected2RandomDances} handleChange={console.log} />
+      <PillList items={DANCES} selectedItems={selected2RandomDances} handleChange={() => {}} />
     )
     const pill = getByTestId(`title-${selected2RandomDances[0]}`)
     expect(pill).toBeTruthy()

@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { Sheet } from './Sheet'
 import { render } from '@testing-library/react-native'
 import { Options } from '../Options'
