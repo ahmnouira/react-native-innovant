@@ -15,7 +15,8 @@ export const PropsProvider = ({ props, children }: PropsWithChildren<ProviderPro
     <Context.Provider
       value={{
         props,
-      }}>
+      }}
+    >
       {children}
     </Context.Provider>
   )

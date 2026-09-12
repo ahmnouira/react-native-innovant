@@ -28,7 +28,8 @@ export const Sheet = forwardRef(
         wrapper: styles.sheetWrapper,
 
         draggableIcon: styles.sheetDraggableIcon,
-      }}>
+      }}
+    >
       <SafeAreaView>
         <View style={styles.container}>
           <SheetHeader okDisabled={temp ? true : false} {...rest} />
@@ -36,7 +37,8 @@ export const Sheet = forwardRef(
           <ScrollView
             style={[styles.scroll, { marginBottom: 60 }]}
             showsVerticalScrollIndicator={false}
-            keyboardShouldPersistTaps='handled'>
+            keyboardShouldPersistTaps='handled'
+          >
             <View style={styles.main}>{children}</View>
           </ScrollView>
         </View>

@@ -22,7 +22,8 @@ export const UtilsProvider = ({ children }: React.PropsWithChildren<{}>) => {
       value={{
         ...state,
         dispatch,
-      }}>
+      }}
+    >
       {children}
     </UtilsContext.Provider>
   )

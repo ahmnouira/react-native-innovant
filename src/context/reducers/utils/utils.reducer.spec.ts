@@ -1,7 +1,6 @@
 import { UtilsAction } from '../../actions/utils.action'
 import { utilsReducer, initialUtilsState, UitlsState } from './utils.reducer'
 
-
 describe('utils reducer', () => {
   it('should return the initialState', () => {
     expect(utilsReducer(undefined)).toEqual(initialUtilsState)

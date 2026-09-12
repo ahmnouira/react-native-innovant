@@ -13,7 +13,8 @@ export const KeyboardAvoiding: React.FC<KeyboardAvoidingProps> = ({
     <KeyboardAvoidingView
       keyboardVerticalOffset={isIOS ? (hasNotch() ? 90 : 64) : 0}
       behavior={isIOS ? 'padding' : undefined}
-      style={{ flex: 1 }}>
+      style={{ flex: 1 }}
+    >
       {children}
     </KeyboardAvoidingView>
   )
