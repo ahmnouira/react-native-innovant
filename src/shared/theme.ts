@@ -3,6 +3,8 @@ export type ThemeType = {
     primary: {
       regular: string
       bold: string
+      light?: string
+      medium?: string
     }
 
     secondary: {
