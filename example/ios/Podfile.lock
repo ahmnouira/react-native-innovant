@@ -786,7 +786,7 @@ PODS:
     - React-FabricComponents/components/iostextinput (= 0.87.1)
     - React-FabricComponents/components/modal (= 0.87.1)
     - React-FabricComponents/components/rncore (= 0.87.1)
-    - React-FabricComponents/components/ (= 0.87.1)
+    - React-FabricComponents/components/safeareaview (= 0.87.1)
     - React-FabricComponents/components/scrollview (= 0.87.1)
     - React-FabricComponents/components/switch (= 0.87.1)
     - React-FabricComponents/components/text (= 0.87.1)
@@ -889,7 +889,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
     - Yoga
-  - React-FabricComponents/components/ (0.87.1):
+  - React-FabricComponents/components/safeareaview (0.87.1):
     - hermes-engine
     - RCTRequired
     - RCTTypeSafety
