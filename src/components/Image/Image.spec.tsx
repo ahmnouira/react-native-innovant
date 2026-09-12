@@ -3,7 +3,7 @@ import { Image } from './Image'
 import { render } from '@testing-library/react-native'
 
 describe('Image', () => {
-  test('render Image', () => {
-    const {} = render(<Image source={{ uri: '' }} />)
+  test('render Image', async () => {
+    const {} = await render(<Image source={{ uri: '' }} />)
   })
 })

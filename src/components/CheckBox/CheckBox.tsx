@@ -12,7 +12,8 @@ export const CheckBox: React.FC<CheckBoxProps> = ({ checked = false, color }: Ch
   return (
     <TouchableOpacity
       activeOpacity={0.75}
-      style={[styles.container, checked ? { backgroundColor: color } : null, { borderColor: color }]}>
+      style={[styles.container, checked ? { backgroundColor: color } : null, { borderColor: color }]}
+    >
       {checked ? <Icon name='check' style={[styles.checkIcon]} /> : null}
     </TouchableOpacity>
   )

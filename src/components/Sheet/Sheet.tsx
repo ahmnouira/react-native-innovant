@@ -19,10 +19,7 @@ export const Sheet = forwardRef(
     <RBSheet
       ref={ref}
       height={height > 4 ? height : windowHeight / height}
-      animationType='slide'
-      closeOnDragDown
       closeOnPressMask
-      keyboardAvoidingViewEnabled
       customStyles={{
         container: styles.sheetContainer,
         wrapper: styles.sheetWrapper,

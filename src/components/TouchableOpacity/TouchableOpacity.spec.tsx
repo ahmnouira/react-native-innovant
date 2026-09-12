@@ -3,8 +3,8 @@ import { render } from '@testing-library/react-native'
 import { TouchableOpacity } from './TouchableOpacity'
 
 describe('TouchableOpacity ', () => {
-  test('render TouchableOpacity ', () => {
-    const { container } = render(<TouchableOpacity />)
+  test('render TouchableOpacity ', async () => {
+    const { container } = await render(<TouchableOpacity />)
     expect(container).toBeDefined()
   })
 })

@@ -11,7 +11,7 @@ describe('PillList', () => {
       selected2RandomDances.push(item)
     }
     selected2RandomDances = [...new Set(selected2RandomDances)]
-    const { getByTestId } = render(
+    const { getByTestId } = await render(
       <PillList items={DANCES} selectedItems={selected2RandomDances} handleChange={console.log} />
     )
     const pill = getByTestId(`title-${selected2RandomDances[0]}`)

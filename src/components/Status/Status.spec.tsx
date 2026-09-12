@@ -3,8 +3,8 @@ import { render } from '@testing-library/react-native'
 import { Status } from './Status'
 
 describe('Status', () => {
-  test('render Status', () => {
-    const { container } = render(<Status backgroundColor={'#313242'} barStyle='light-content' />)
+  test('render Status', async () => {
+    const { container } = await render(<Status barStyle='light-content' />)
     expect(container).toBeDefined()
   })
 })

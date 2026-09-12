@@ -1,6 +1,6 @@
 {
   "name": "react-native-innovant",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "React Native Innovant UI Library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -37,41 +37,38 @@
   "readme": "https://github.com/ahmnouira/react-native-innovant.git#readme",
   "homepage": "https://github.com/ahmnouira/react-native-innovant/",
   "license": "MIT",
-  "devDependencies": {
-    "@faker-js/faker": "^10.0.0",
-    "@testing-library/react-native": "9.1.0",
-    "@types/jest": "27.0.3",
-    "@types/react": "17.0.37",
-    "@types/react-native": "0.67.3",
-    "@types/react-native-snackbar-component": "1.1.1",
-    "@types/react-native-vector-icons": "6.4.10",
-    "@types/react-test-renderer": "17.0.1",
-    "auto-changelog": "2.4.0",
-    "babel-jest": "27.3.1",
-    "codecov": "3.8.3",
-    "eslint": "8.3.0",
-    "husky": "7.0.4",
-    "jest": "27.3.1",
-    "metro-react-native-babel-preset": "0.69.1",
-    "prettier": "2.6.1",
-    "react": "17.0.2",
-    "react-native": "0.67.4",
-    "react-native-vector-icons": "8.1.0",
-    "react-test-renderer": "17.0.2",
-    "rimraf": "3.0.2",
-    "ts-node": "10.7.0",
-    "typescript": "4.6.3"
-  },
   "dependencies": {
-    "react-native-device-info": "^8.1.7",
-    "react-native-fast-image": "^8.3.7",
-    "react-native-raw-bottom-sheet": "^2.2.0",
-    "react-native-simple-toast": "1.1.3",
-    "react-native-snackbar-component": "1.1.12",
-    "react-native-vector-icons": "^9.0.0"
+    "@d11/react-native-fast-image": "^8.13.0",
+    "react-native-device-info": "^15.0.2",
+    "react-native-raw-bottom-sheet": "^3.0.0",
+    "react-native-simple-toast": "^3.3.2",
+    "react-native-snackbar-component": "^1.1.12"
   },
   "peerDependencies": {
-    "react-native-vector-icons": ">7.0.0"
+    "react": "19.2.3",
+    "react-native": "0.87.1",
+    "react-native-vector-icons": "^10.3.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "@react-native/babel-preset": "^0.87.1",
+    "@react-native/eslint-config": "^0.87.1",
+    "@react-native/jest-preset": "^0.87.1",
+    "@react-native/typescript-config": "^0.87.1",
+    "@testing-library/react-native": "^14.0.1",
+    "@types/jest": "^30.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-native-snackbar-component": "^1.1.9",
+    "@types/react-native-vector-icons": "^6.4.18",
+    "@types/react-test-renderer": "^19.3.0",
+    "eslint": "^8.19.0",
+    "eslint-plugin-jest": "^29.16.6",
+    "jest": "^30.5.1",
+    "prettier": "^3.9.6",
+    "react-test-renderer": "19.2.3",
+    "rimraf": "^6.1.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
@@ -96,8 +93,5 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "resolutions": {
-    "@types/react": "17.0.26"
   }
 }
