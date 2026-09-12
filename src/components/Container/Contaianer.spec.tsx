@@ -12,8 +12,8 @@ describe('Container', () => {
     const {} = render(<Container secondary />)
   })
 
-  it('should render correctly with theme provider', () => {
-    const { container } = render(
+  it('should render correctly with theme provider', async () => {
+    const { container } = await render(
       <ThemeProvider theme={theme}>
         <Container />
       </ThemeProvider>

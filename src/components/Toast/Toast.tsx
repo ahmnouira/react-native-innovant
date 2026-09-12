@@ -10,9 +10,7 @@ type ToastProps = {
 
 export const Toast: React.FC<ToastProps> = ({ visible, message, position = 'top' }: ToastProps) => {
   if (visible) {
-    SimpleToast.showWithGravity(message, SimpleToast.LONG, position === 'top' ? SimpleToast.TOP : SimpleToast.BOTTOM, [
-      'UIAlertController',
-    ])
+    SimpleToast.showWithGravity(message, SimpleToast.LONG, position === 'top' ? SimpleToast.TOP : SimpleToast.BOTTOM)
   }
   return null
 }

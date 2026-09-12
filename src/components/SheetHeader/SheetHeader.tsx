@@ -28,8 +28,7 @@ export const SheetHeader: React.FC<SheetHeaderProps> = ({
             activeOpacity={0.75}
             style={[styles.okBtn, !okDisabled ? { opacity: 0.8 } : null]}
             onPress={onConfirm}
-            disabled={!okDisabled}
-          >
+            disabled={!okDisabled}>
             <Text style={styles.ok}>Ok</Text>
           </TouchableOpacity>
         ) : (

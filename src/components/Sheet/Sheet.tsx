@@ -19,17 +19,13 @@ export const Sheet = forwardRef(
     <RBSheet
       ref={ref}
       height={height > 4 ? height : windowHeight / height}
-      animationType='slide'
-      closeOnDragDown
       closeOnPressMask
-      keyboardAvoidingViewEnabled
       customStyles={{
         container: styles.sheetContainer,
         wrapper: styles.sheetWrapper,
 
         draggableIcon: styles.sheetDraggableIcon,
-      }}
-    >
+      }}>
       <SafeAreaView>
         <View style={styles.container}>
           <SheetHeader okDisabled={temp ? true : false} {...rest} />
@@ -37,8 +33,7 @@ export const Sheet = forwardRef(
           <ScrollView
             style={[styles.scroll, { marginBottom: 60 }]}
             showsVerticalScrollIndicator={false}
-            keyboardShouldPersistTaps='handled'
-          >
+            keyboardShouldPersistTaps='handled'>
             <View style={styles.main}>{children}</View>
           </ScrollView>
         </View>

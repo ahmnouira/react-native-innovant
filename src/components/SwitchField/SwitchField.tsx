@@ -35,7 +35,6 @@ export const SwitchField: React.FC<SwitchFieldProps> = ({ label, ...props }: Swi
           trackColor={{ false: '#E2E2E2', true: '#172B4DA0' }}
           thumbColor={props.value ? theme?.colors.primary : '#D1D1D1'}
           shouldRasterizeIOS
-          isTVSelectable
           {...props}
         />
       </View>
