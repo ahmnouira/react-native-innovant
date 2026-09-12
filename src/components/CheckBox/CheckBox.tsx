@@ -4,7 +4,7 @@ import { styles } from './styles'
 import Icon from 'react-native-vector-icons/AntDesign'
 
 export type CheckBoxProps = {
-  color: ColorValue
+  color?: ColorValue
   checked?: boolean
 }
 
@@ -12,8 +12,7 @@ export const CheckBox: React.FC<CheckBoxProps> = ({ checked = false, color }: Ch
   return (
     <TouchableOpacity
       activeOpacity={0.75}
-      style={[styles.container, checked ? { backgroundColor: color } : null, { borderColor: color }]}
-    >
+      style={[styles.container, checked ? { backgroundColor: color } : null, { borderColor: color }]}>
       {checked ? <Icon name='check' style={[styles.checkIcon]} /> : null}
     </TouchableOpacity>
   )

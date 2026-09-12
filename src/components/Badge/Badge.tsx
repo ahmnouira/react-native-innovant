@@ -4,7 +4,7 @@ import { TouchableOpacity, Text, Image, ColorValue, View, ImageSourcePropType } 
 
 export type BadgeProps = {
   text: string
-  bgColor: ColorValue
+  bgColor?: ColorValue
   textColor?: ColorValue
   image?: ImageSourcePropType
 }
