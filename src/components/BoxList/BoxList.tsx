@@ -8,8 +8,10 @@ export type BoxListProps<T = any> = Omit<FlatListProps<T>, 'data' | 'renderItem'
   handleChange: (item: T) => void
 }
 
-export const BoxList: React.FC<BoxListProps> = ({ items, selectedItems, handleChange, ...props }: BoxListProps) => {
-  const renderItems = ({ item: { title, icon } }) => {
+export const BoxList: React.FC<BoxListProps> = ({ items, selectedItems, handleChange }: BoxListProps) => {
+  const renderItems = ({ item }: any) => {
+    const { title, icon } = item
+
     return (
       <Box isChecked={selectedItems.includes(title)} handlePress={() => handleChange(title)} title={title} pic={icon} />
     )
@@ -17,7 +19,7 @@ export const BoxList: React.FC<BoxListProps> = ({ items, selectedItems, handleCh
   return (
     <FlatList
       showsVerticalScrollIndicator={false}
-      keyExtractor={(item, index) => String(index)}
+      keyExtractor={(_, index) => String(index)}
       columnWrapperStyle={{ flex: 1, alignItems: 'center', marginHorizontal: 4 }}
       data={items}
       renderItem={renderItems}

@@ -23,6 +23,8 @@ export const initialUtilsState: UitlsState = {
 }
 
 export const utilsReducer = (state?: UitlsState, action?: UtilsAction): UitlsState => {
+  if (!state) return initialUtilsState
+
   switch (action?.type) {
     case 'SET_TOAST': {
       return {

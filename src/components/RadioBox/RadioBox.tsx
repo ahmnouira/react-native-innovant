@@ -5,15 +5,14 @@ import { TouchableOpacity } from '../TouchableOpacity'
 import { styles } from './styles'
 
 export type RadioBoxProps = {
-  color: ColorValue
+  color?: ColorValue
   checked?: boolean
 }
 
 export const RadioBox: React.FC<RadioBoxProps> = ({ checked = false, color }: RadioBoxProps) => {
   return (
     <TouchableOpacity
-      style={[styles.container, { borderEndColor: color }, checked ? { backgroundColor: color } : null]}
-    >
+      style={[styles.container, { borderEndColor: color }, checked ? { backgroundColor: color } : null]}>
       {checked ? <Icon name='check' style={[styles.checkIcon]} /> : null}
     </TouchableOpacity>
   )

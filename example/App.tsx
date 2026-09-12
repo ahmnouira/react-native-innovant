@@ -1,162 +1,104 @@
-import React, { useRef, useState } from 'react'
-import { ScrollView, StyleSheet, View } from 'react-native'
+import React, { useState } from 'react';
+import { StyleSheet, View } from 'react-native';
+import { ThemeType } from 'react-native-innovant';
 import {
   Badge,
   Box,
-  BoxList,
   Button,
-  CheckBox,
-  Container,
-  ContextWrapper,
-  Empty,
-  ErrorState,
-  IconButton,
-  Image,
-  KeyboardAvoiding,
   Loading,
-  MiscField,
   Modal,
   Options,
   Pill,
-  PillList,
   RadioBox,
-  Sheet,
   Status,
-  SwitchField,
   Text,
-  ThemeProvider,
-  useTheme,
-  useUtils,
-} from 'react-native-innovant'
+} from 'react-native-innovant';
 
-const genres = ['Hip-Hop', 'R&B', 'Pop', 'Electro']
+export default function App() {
+  const items = [
+    { title: 'Guitar', icon: require('./assets/double-bass.png') },
+    { title: 'Piano', icon: require('./assets/piano.png') },
+  ];
 
-const instruments = [
-  { title: 'Guitar', icon: { uri: 'https://placehold.co/24/151515/FFFFFF?text=G' } },
-  { title: 'Piano', icon: { uri: 'https://placehold.co/24/151515/FFFFFF?text=P' } },
-  { title: 'Drums', icon: { uri: 'https://placehold.co/24/151515/FFFFFF?text=D' } },
-]
+  const genres = ['Hip-Hop', 'R&B', 'Pop', 'Electro'];
 
-const App = () => {
-  return (
-    <ThemeProvider>
-      <ContextWrapper>
-        <KeyboardAvoiding>
-          <Container>
-            <Status barStyle='light-content' />
-            <DemoScreen />
-          </Container>
-        </KeyboardAvoiding>
-      </ContextWrapper>
-    </ThemeProvider>
-  )
-}
+  const [selected, setSelected] = useState<any>(items[0]);
+  const [visible, setVisible] = useState(false);
+  const [on, setOn] = useState(false);
 
-export default App
-
-const DemoScreen = () => {
-  const theme = useTheme()
-  const { dispatch } = useUtils()
-  const sheetRef = useRef<any>(null)
-
-  const [selectedGenres, setSelectedGenres] = useState<string[]>(['Pop'])
-  const [selectedInstruments, setSelectedInstruments] = useState<string[]>(['Piano'])
-  const [switchOn, setSwitchOn] = useState(false)
-  const [checkboxChecked, setCheckboxChecked] = useState(false)
-  const [radioChecked, setRadioChecked] = useState(false)
-  const [modalVisible, setModalVisible] = useState(false)
-  const [loading, setLoading] = useState(false)
-
-  const toggleGenre = (item: string) =>
-    setSelectedGenres((prev) => (prev.includes(item) ? prev.filter((i) => i !== item) : [...prev, item]))
-
-  const toggleInstrument = (item: any) =>
-    setSelectedInstruments((prev) =>
-      prev.includes(item.title) ? prev.filter((i) => i !== item.title) : [...prev, item.title]
-    )
-
-  const showToast = () =>
-    dispatch({ type: 'SET_TOAST', payload: { message: 'Hello from a toast!', visible: true, postion: 'top' } })
-
-  const section = (title: string) => (
-    <Text font='bold' size={16} style={styles.section}>
-      {title}
-    </Text>
-  )
+  const theme: ThemeType = {
+    fonts: {
+      primary: { regular: 'Poppins-Regular', bold: 'Poppins-Bold' },
+      secondary: {
+        regular: 'Montserrat-Regular',
+        bold: 'Montserrat-Bold',
+        medium: 'Montserrat-Medium',
+      },
+    },
+    colors: {
+      primary: '#ED1E46',
+      light: '#F68955',
+      secondary: 'rgba(0, 0, 0, .5)',
+      tertiary: 'rgba(0, 0, 0, .2)',
+      black: '#151515',
+      white: '#FFF',
+    },
+    sizes: { xm: 4, sm: 8, md: 12, lg: 16, xl: 20, xxl: 24 },
+  };
 
   return (
-    <ScrollView style={styles.container} contentContainerStyle={styles.content}>
-      <Text font='bold' size={22}>
-        react-native-innovant
+    <View style={styles.container}>
+      <Status />
+      <Text font="bold" size={16}>
+        Bold header
       </Text>
-      <Text>A showcase of every component in the library.</Text>
-
-      {section('Feedback')}
-      <View style={styles.row}>
-        <Badge text='New' bgColor={theme?.colors.primary} />
-        <Badge text='Beta' bgColor={theme?.colors.light} />
-      </View>
-      <Loading center />
-      <Button title='Show Toast' onPress={showToast} />
-      <Button title='Loading Button' isLoading={loading} onPress={() => setLoading((prev) => !prev)} />
-
-      {section('Selection')}
-      <Pill
-        title={genres[0]}
-        isChecked={selectedGenres.includes(genres[0])}
-        handlePress={() => toggleGenre(genres[0])}
-      />
-      <PillList items={genres} selectedItems={selectedGenres} handleChange={toggleGenre} />
-      <BoxList items={instruments} selectedItems={selectedInstruments} handleChange={toggleInstrument} />
-      <Text>Selected: {selectedGenres.join(', ') || 'none'}</Text>
-
-      {section('Fields')}
-      <SwitchField label='Notifications' value={switchOn} onValueChange={setSwitchOn} />
-      <MiscField label='Version' value='0.3.1' primary />
-      <View style={styles.row}>
-        <CheckBox color={theme?.colors.primary} checked={checkboxChecked} />
-        <RadioBox color={theme?.colors.primary} checked={radioChecked} />
-        <Button title={checkboxChecked ? 'Checked' : 'Check'} onPress={() => setCheckboxChecked((prev) => !prev)} />
-      </View>
-      <Box title='Guitar' pic={instruments[0].icon} isChecked handlePress={() => {}} />
-
-      {section('Info & Media')}
-      <Empty message='Nothing found' subMessage='Try another search' />
-      <Image source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }} style={styles.image as any} />
-      <MiscField label='Profile' primary onPress={() => {}} />
-      <IconButton icon='heart' onPress={() => {}} color='#ED1E46' />
-
-      {section('Overlays')}
-      <Button title='Open Modal' onPress={() => setModalVisible(true)} />
-      <Button title='Open Bottom Sheet' onPress={() => sheetRef.current?.open()} />
-      <Button title='Open Error State' onPress={() => {}} />
-      <View style={styles.row}>
-        <Options
-          options={[
-            { title: 'Edit Profile', icon: 'edit', onPress: () => {} },
-            { title: 'Report a bug', icon: 'exclamationcircleo', onPress: () => {} },
-          ]}
+      <Text>Regular body</Text>
+      <Badge text="New" bgColor="#ED1E46" />
+      <Badge text="Beta" bgColor="#F68955" textColor="#FFFFFF" />
+      <View style={styles.center}>
+        <Box
+          title="Guitar"
+          pic={require('./assets/violin.png')}
+          isChecked
+          handlePress={() => {}}
         />
       </View>
 
-      <ErrorState error='Network request failed' />
+      <Button title="Submit" isLoading={false} onPress={() => {}} />
+      <Button title="Loading…" isLoading />
+      <Loading size="large" />
 
-      <Modal visible={modalVisible} onClose={() => setModalVisible(false)} title='Settings'>
-        <Text>This is a fully customizable modal.</Text>
-        <Button title='Close' onPress={() => setModalVisible(false)} />
+      <Modal
+        visible={visible}
+        onClose={() => setVisible(false)}
+        title="Settings"
+      >
+        <Text>Modal content goes here.</Text>
       </Modal>
-
-      <Sheet ref={sheetRef} title='Choose an option' onClose={() => sheetRef.current?.close()}>
-        <PillList items={genres} selectedItems={selectedGenres} handleChange={toggleGenre} />
-      </Sheet>
-    </ScrollView>
-  )
+      <Options
+        options={[
+          { title: 'Edit Profile', icon: 'edit', onPress: () => {} },
+          { title: 'Report', icon: 'exclamationcircleo', onPress: () => {} },
+        ]}
+      />
+      <Pill title="Hip-Hop" isChecked handlePress={() => {}} />
+      <RadioBox color="#ED1E46" checked />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1 },
-  content: { padding: 16, paddingBottom: 80 },
-  section: { marginTop: 16, marginBottom: 8 },
-  row: { flexDirection: 'row', alignItems: 'center', marginVertical: 4 },
-  image: { width: 120, height: 120 },
-})
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    padding: 32,
+    marginTop: 64,
+  },
+  center: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 48,
+    marginHorizontal: 16,
+    marginVertical: 32,
+  },
+});

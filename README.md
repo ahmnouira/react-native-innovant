@@ -57,16 +57,13 @@ export const App = () => {
       <ContextWrapper>
         <Container>
           <Button title='Submit' onPress={() => {}} />
-          <Text font='bold'>Hello Innovant!</Text>
+          <Text font='bold'>Hello React Native Innovant!</Text>
         </Container>
       </ContextWrapper>
     </ThemeProvider>
   )
 }
 ```
-
-> The root component also renders `<Status />` and `<Toast />` for you via
-> [`ContextWrapper`](#context-wrapper). Access them imperatively with [`useUtils`](#useutils).
 
 ## Components
 
@@ -93,11 +90,10 @@ export const App = () => {
 | [RadioBox](#radiobox)                 | Radio indicator.                                       |
 | [Sheet](#sheet)                       | Bottom sheet built on `react-native-raw-bottom-sheet`. |
 | [SheetHeader](#sheetheader)           | Sheet title bar with close/confirm.                    |
-| [Setup](#setup)                       | Mounts `<Status />`, `<Toast />`.                      |
+| [Setup](#setup)                       | Mounts `<Status />`                                    |
 | [Status](#status)                     | Status bar wrapper.                                    |
 | [SwitchField](#switchfield)           | Themed `Switch` with label.                            |
 | [Text](#text)                         | Themed text with font weights & sizes.                 |
-| [Toast](#toast)                       | Imperative toast wrapper.                              |
 | [TouchableOpacity](#touchableopacity) | Pressable wrapper with consistent feedback.            |
 
 ### Badge
@@ -216,7 +212,7 @@ import { Loading } from 'react-native-innovant'
 ```jsx
 import { MiscField } from 'react-native-innovant'
 
-;<MiscField label='Version' value='0.3.1' primary onPress={() => {}} />
+<MiscField label='Version' value='0.3.1' primary onPress={() => {}} />
 ```
 
 ### Modal
@@ -327,16 +323,6 @@ import { Text } from 'react-native-innovant'
 <Text>Regular body</Text>
 ```
 
-### Toast
-
-```jsx
-import { Toast } from 'react-native-innovant'
-
-<Toast visible message='Saved!' position='bottom' />
-```
-
-> Use the [`useUtils`](#useutils) hook to trigger toasts imperatively instead.
-
 ### TouchableOpacity
 
 ```jsx
@@ -360,41 +346,12 @@ const MyComponent = () => {
 }
 ```
 
-### useUtils
-
-Returns global UI state (`toast`, `imageModal`) and a `dispatch` function:
-
-```jsx
-import { useUtils } from 'react-native-innovant'
-
-const MyComponent = () => {
-  const { dispatch } = useUtils()
-
-  return (
-    <Button
-      title='Show Toast'
-      onPress={() => dispatch({ type: 'SET_TOAST', payload: { message: 'Saved!', visible: true, postion: 'top' } })}
-    />
-  )
-}
-```
-
 ### ThemeProvider
 
 ```jsx
 import { ThemeProvider } from 'react-native-innovant'
 
 <ThemeProvider>{/* app */}</ThemeProvider>
-```
-
-### ContextWrapper
-
-Providers application-level UI state (`toast`, `imageModal`) and renders `Setup` for you:
-
-```jsx
-import { ContextWrapper } from 'react-native-innovant'
-
-<ContextWrapper>{/* app */}</ContextWrapper>
 ```
 
 ## Theme
