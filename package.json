@@ -6,9 +6,11 @@
   "types": "dist/index.d.ts",
   "keywords": [
     "react-native",
-    "reactjs",
-    "reactnative",
-    "ui"
+    "react-native-library",
+    "react-native-ui",
+    "react-native-components",
+    "react-native-ui-library",
+    "react-native-design-system"
   ],
   "files": [
     "dist"

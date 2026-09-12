@@ -22,7 +22,7 @@ export const initialUtilsState: UitlsState = {
   },
 }
 
-export const utilsReducer = (state: UitlsState, action?: UtilsAction): UitlsState => {
+export const utilsReducer = (state?: UitlsState, action?: UtilsAction): UitlsState => {
   switch (action?.type) {
     case 'SET_TOAST': {
       return {

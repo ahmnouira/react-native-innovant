@@ -11,6 +11,7 @@
     "sourceMap": true,
     "outDir": "dist",
     "rootDir": "src",
+    "types": ["jest"],
     "declaration": true /* Generates corresponding '.d.ts' file. */,
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
     // "rootDir": "./",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
