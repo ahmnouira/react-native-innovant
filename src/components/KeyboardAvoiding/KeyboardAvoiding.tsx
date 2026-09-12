@@ -5,9 +5,8 @@ import { isIOS } from '../../helpers/paltfrom'
 
 type KeyboardAvoidingProps = {}
 
-export const KeyboardAvoiding: React.FC<KeyboardAvoidingProps> = ({
+export const KeyboardAvoiding: React.FC<PropsWithChildren<KeyboardAvoidingProps>> = ({
   children,
-  ...rest
 }: PropsWithChildren<KeyboardAvoidingProps>) => {
   return (
     <KeyboardAvoidingView
