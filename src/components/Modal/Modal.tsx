@@ -59,8 +59,7 @@ export const Modal: React.FC<ModalProps> = ({
                   width: width <= 2 ? windowWidth / width : width,
                   ...containerStyles,
                 },
-              ]}
-            >
+              ]}>
               <View style={styles.row}>
                 <TouchableOpacity style={[styles.roundView, styles.closeView]} onPress={onClose}>
                   <Icon name='close' color={'black'} size={20} />
