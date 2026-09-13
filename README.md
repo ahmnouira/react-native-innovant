@@ -47,22 +47,41 @@ Peer dependencies: `react`, `react-native` and `react-native-vector-icons` must 
 
 Wrap your app with `ThemeProvider` and `ContextWrapper`, then use any component:
 
-```jsx
+```tsx
 import React from 'react'
-import { Button, Container, ContextWrapper, ThemeProvider, Text } from 'react-native-innovant'
+import { Alert, StyleSheet, View } from 'react-native'
+import { Badge, Button, Loading, Pill, ThemeProvider } from 'react-native-innovant'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 
-export const App = () => {
+export default function App() {
+  const handlePress = () => {
+    Alert.alert('Pressed')
+  }
+
   return (
-    <ThemeProvider>
-      <ContextWrapper>
-        <Container>
-          <Button title='Submit' onPress={() => {}} />
-          <Text font='bold'>Hello React Native Innovant!</Text>
-        </Container>
-      </ContextWrapper>
-    </ThemeProvider>
+    <SafeAreaProvider>
+      <ThemeProvider>
+        <View style={styles.container}>
+          <Badge text='New' bgColor='#ED1E46' />
+          <Badge text='Beta' bgColor='#F68955' textColor='#FFFFFF' />
+          <Button title='Submit' isLoading={false} onPress={handlePress} />
+          <Button title='Loading…' isLoading />
+          <Loading size='large' />
+          <Pill title='Hip-Hop' isChecked handlePress={handlePress} />
+        </View>
+      </ThemeProvider>
+    </SafeAreaProvider>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    padding: 32,
+    marginTop: 64,
+  },
+})
 ```
 
 ## Components
@@ -110,7 +129,7 @@ import { Badge } from 'react-native-innovant'
 ```jsx
 import { Box } from 'react-native-innovant'
 
-<Box title='Guitar' pic={require('./guitar.png')} isChecked handlePress={() => {}} />
+;<Box title='Guitar' pic={require('./guitar.png')} isChecked handlePress={() => {}} />
 ```
 
 ### BoxList
@@ -140,7 +159,7 @@ import { Button } from 'react-native-innovant'
 ```jsx
 import { CheckBox } from 'react-native-innovant'
 
-<CheckBox color='#ED1E46' checked />
+;<CheckBox color='#ED1E46' checked />
 ```
 
 ### Container
@@ -148,7 +167,7 @@ import { CheckBox } from 'react-native-innovant'
 ```jsx
 import { Container } from 'react-native-innovant'
 
-<Container secondary>{/* content */}</Container>
+;<Container secondary>{/* content */}</Container>
 ```
 
 ### Empty
@@ -156,7 +175,7 @@ import { Container } from 'react-native-innovant'
 ```jsx
 import { Empty } from 'react-native-innovant'
 
-<Empty message='No results' subMessage='Try another search' searching />
+;<Empty message='No results' subMessage='Try another search' searching />
 ```
 
 ### EmptyHeader
@@ -164,7 +183,7 @@ import { Empty } from 'react-native-innovant'
 ```jsx
 import { EmptyHeader } from 'react-native-innovant'
 
-<EmptyHeader />
+;<EmptyHeader />
 ```
 
 ### ErrorState
@@ -172,7 +191,7 @@ import { EmptyHeader } from 'react-native-innovant'
 ```jsx
 import { ErrorState } from 'react-native-innovant'
 
-<ErrorState error='Network request failed' />
+;<ErrorState error='Network request failed' />
 ```
 
 ### IconButton
@@ -180,7 +199,7 @@ import { ErrorState } from 'react-native-innovant'
 ```jsx
 import { IconButton } from 'react-native-innovant'
 
-<IconButton icon='heart' color='#ED1E46' size={24} onPress={() => {}} />
+;<IconButton icon='heart' color='#ED1E46' size={24} onPress={() => {}} />
 ```
 
 ### Image
@@ -188,7 +207,7 @@ import { IconButton } from 'react-native-innovant'
 ```jsx
 import { Image } from 'react-native-innovant'
 
-<Image source={{ uri: 'https://example.com/logo.png' }} style={{ width: 100, height: 100 }} />
+;<Image source={{ uri: 'https://example.com/logo.png' }} style={{ width: 100, height: 100 }} />
 ```
 
 ### KeyboardAvoiding
@@ -196,7 +215,7 @@ import { Image } from 'react-native-innovant'
 ```jsx
 import { KeyboardAvoiding } from 'react-native-innovant'
 
-<KeyboardAvoiding>{/* form content */}</KeyboardAvoiding>
+;<KeyboardAvoiding>{/* form content */}</KeyboardAvoiding>
 ```
 
 ### Loading
@@ -204,7 +223,7 @@ import { KeyboardAvoiding } from 'react-native-innovant'
 ```jsx
 import { Loading } from 'react-native-innovant'
 
-<Loading size='large' center />
+;<Loading size='large' center />
 ```
 
 ### MiscField
@@ -212,7 +231,7 @@ import { Loading } from 'react-native-innovant'
 ```jsx
 import { MiscField } from 'react-native-innovant'
 
-<MiscField label='Version' value='0.3.1' primary onPress={() => {}} />
+;<MiscField label='Version' value='0.3.1' primary onPress={() => {}} />
 ```
 
 ### Modal
@@ -232,7 +251,7 @@ const [visible, setVisible] = useState(false)
 ```jsx
 import { Options } from 'react-native-innovant'
 
-<Options
+;<Options
   options={[
     { title: 'Edit Profile', icon: 'edit', onPress: () => {} },
     { title: 'Report', icon: 'exclamationcircleo', onPress: () => {} },
@@ -245,7 +264,7 @@ import { Options } from 'react-native-innovant'
 ```tsx
 import { Pill } from 'react-native-innovant'
 
-<Pill title='Hip-Hop' isChecked handlePress={() => {}} />
+;<Pill title='Hip-Hop' isChecked handlePress={() => {}} />
 ```
 
 ### PillList
@@ -263,7 +282,7 @@ const genres = ['Hip-Hop', 'R&B', 'Pop', 'Electro']
 ```jsx
 import { RadioBox } from 'react-native-innovant'
 
-<RadioBox color='#ED1E46' checked />
+;<RadioBox color='#ED1E46' checked />
 ```
 
 ### Sheet
@@ -283,7 +302,7 @@ const ref = useRef<any>(null)
 ```jsx
 import { SheetHeader } from 'react-native-innovant'
 
-<SheetHeader title='Confirm' onClose={() => {}} onConfirm={() => {}} />
+;<SheetHeader title='Confirm' onClose={() => {}} onConfirm={() => {}} />
 ```
 
 ### Setup
@@ -292,7 +311,7 @@ import { SheetHeader } from 'react-native-innovant'
 import { ContextWrapper, Setup } from 'react-native-innovant'
 
 // Usually rendered once inside ContextWrapper:
-<ContextWrapper>
+;<ContextWrapper>
   <Setup />
   {/* your app */}
 </ContextWrapper>
@@ -303,7 +322,7 @@ import { ContextWrapper, Setup } from 'react-native-innovant'
 ```jsx
 import { Status } from 'react-native-innovant'
 
-<Status barStyle='light-content' />
+;<Status barStyle='light-content' />
 ```
 
 ### SwitchField
@@ -311,7 +330,7 @@ import { Status } from 'react-native-innovant'
 ```jsx
 import { SwitchField } from 'react-native-innovant'
 
-<SwitchField label='Notifications' value={on} onValueChange={setOn} />
+;<SwitchField label='Notifications' value={on} onValueChange={setOn} />
 ```
 
 ### Text
@@ -328,7 +347,7 @@ import { Text } from 'react-native-innovant'
 ```jsx
 import { TouchableOpacity } from 'react-native-innovant'
 
-<TouchableOpacity onPress={() => {}}>{/* content */}</TouchableOpacity>
+;<TouchableOpacity onPress={() => {}}>{/* content */}</TouchableOpacity>
 ```
 
 ## Hooks & Context
@@ -351,7 +370,7 @@ const MyComponent = () => {
 ```jsx
 import { ThemeProvider } from 'react-native-innovant'
 
-<ThemeProvider>{/* app */}</ThemeProvider>
+;<ThemeProvider>{/* app */}</ThemeProvider>
 ```
 
 ## Theme

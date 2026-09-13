@@ -12,7 +12,8 @@ export type RadioBoxProps = {
 export const RadioBox: React.FC<RadioBoxProps> = ({ checked = false, color }: RadioBoxProps) => {
   return (
     <TouchableOpacity
-      style={[styles.container, { borderEndColor: color }, checked ? { backgroundColor: color } : null]}>
+      style={[styles.container, { borderEndColor: color }, checked ? { backgroundColor: color } : null]}
+    >
       {checked ? <Icon name='check' style={[styles.checkIcon]} /> : null}
     </TouchableOpacity>
   )

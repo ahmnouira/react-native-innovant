@@ -22,7 +22,8 @@ export const Button: React.FC<ButtonProps> = ({
     <TouchableOpacity
       disabled={disabled}
       style={[styles.button, disabled ? { opacity: 0.5 } : { opacity: 1 }]}
-      {...props}>
+      {...props}
+    >
       {isLoading ? (
         <Loading size='small' center style={{ flex: 1, backgroundColor: undefined }} />
       ) : (
