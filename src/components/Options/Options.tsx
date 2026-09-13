@@ -1,7 +1,8 @@
 import * as React from 'react'
-import { View, TouchableOpacity, Text } from 'react-native'
+import { View, Text } from 'react-native'
 import Icon from 'react-native-vector-icons/AntDesign'
 import { styles } from './styles'
+import { TouchableOpacity } from '../TouchableOpacity'
 
 export type OptionType = {
   title: string
