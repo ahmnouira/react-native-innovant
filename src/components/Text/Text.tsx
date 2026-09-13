@@ -19,7 +19,7 @@ export const Text: React.FC<TextProps> = ({
   const theme = useTheme()
   if (!theme) {
     return (
-      <Text style={[style]} {...props}>
+      <Text style={style} {...props}>
         {children}
       </Text>
     )
